@@ -1,0 +1,10 @@
+Folders
+outdated: outdated scripts, can ignore
+
+Files
+all_PTMs_ath.tab: raw ptm data to make ptm features, this is the primary database
+ptms.tsv: raw ptm data, but this is the secondary database which is not used
+ptm_features.txt: ptm features for ml
+
+Scripts
+process_ptm.py: creates ptm features from all_PTMs_ath.tab

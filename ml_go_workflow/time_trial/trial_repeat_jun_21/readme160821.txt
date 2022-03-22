@@ -1,0 +1,16 @@
+Folders
+
+Files
+*.png: pics of time taken
+- if file contains 'all_time': combined GO classes
+- if file contains 'go_class': separated GO classes
+*.svg: .svg version of above, for publication
+
+*_scores.txt: output files from ml workflow done on chuck norris
+log_*.txt: log files from ml workflow
+compiled_times.txt: output from compiling_time.py, calculated time taken for all ml models
+
+Scripts
+compiling_time.py: combing all the scores files and calculating the time taken for all the ml 
+models used
+plot_time_taken.py: plot time taken by ml models

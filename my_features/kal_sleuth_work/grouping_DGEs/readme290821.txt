@@ -1,0 +1,12 @@
+Folders
+test_files: test files to ensure my scripts are working
+
+Files
+DGE_category_specific_expt.txt: DGE categories with specific DGE experiments
+DGE_category.txt: DGE categories
+DGE_labels_categories.tsv: modified and downloaded from Google sheet with DGE experiment info
+
+Scripts
+group_DGEs.py: creates DGE labels used for ml, together with the DGE category
+group_DGE_specific_expt.py: creates DGE labels used for ml, together with the DGE category
+and specific experimental names

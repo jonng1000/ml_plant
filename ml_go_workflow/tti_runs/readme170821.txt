@@ -1,0 +1,11 @@
+Folders
+output: ml output from runs with tti features as class targets
+output.zipped: zipped output
+
+Files
+class_labels_tti.txt: tti class targets for ml work
+
+Scripts
+create_tti_targets.py: creates a list of the tti features as targets, 
+to use for my ml workflow
+

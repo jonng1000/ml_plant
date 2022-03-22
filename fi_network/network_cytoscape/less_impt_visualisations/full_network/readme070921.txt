@@ -1,0 +1,7 @@
+Files
+legend.svg: legend from cytoscape network file
+exploring_full.cys: cytoscape network file
+feat_catergory_cyto.PNG: cytoscape pic, coloured according feature category
+feat_cluster_id_cyto.PNG: cytoscape pic, coloured according feature cluster id
+feature_relaxed.PNG, feature_moderate.PNGm features_strict.PNG: cytoscape pic, filtered
+network according to relaxed, moderate and strict edge weight thresholds

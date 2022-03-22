@@ -1,0 +1,8 @@
+Folder
+hp_trial_5, hp_trial_10, hp_trial_20: hyperparameter (hp) tests for 5/10/20 iterations of random
+search
+test: testing folder, not impt, can ignore
+time_trial: time tests on 5 ml models, to see which ml model is picked for downstream work
+
+File
+feature_type.txt: updated feature_type.txt file, to use for future ml work

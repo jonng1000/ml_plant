@@ -1,0 +1,7 @@
+Folders
+network_analysis: analysing network
+network_cytoscape: cytoscape visualisation of network
+perm_test_enrich: permutation test of network, to see enrichment/depletion of feature
+categories
+perm_test_edges: permutation test of network, to see enrichment/depletion of edges across
+feature categories

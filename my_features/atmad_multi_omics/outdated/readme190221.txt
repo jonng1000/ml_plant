@@ -1,0 +1,13 @@
+Files
+ciseqtl.xls, transeqtl.xls: cis and trans eqtl files, directly downloaded from AtMAD database
+ciseqtl.txt, transeqtl.txt: tab delimited .txt files, based on the .xls files above, for
+use in my scripts
+processed_cis_qtl.txt, processed_trans_qtl.txt: output from the scripts below, features for ml
+
+Scripts
+process_cis_eqtl.py, process_trans_eqtl.py: scripts to create features, based on the .txt files
+above
+
+Notes:
+These files and scripts were originally used to create ml features, 
+but is now discarded coz I dont need them

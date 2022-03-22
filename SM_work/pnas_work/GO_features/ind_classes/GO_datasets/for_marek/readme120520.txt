@@ -1,0 +1,9 @@
+Created a combined data set with 10 class labels for marek. These
+correspond to the 10 suba predictions and 10 GO class labels. 
+marek_data.py is the script used, which takes these files as
+input: cytosol_GO.txt, endoplasmic_reticulum_GO.txt,
+Golgi_apparatus_GO.txt, mitochondrion_GO.txt, nucleus_GO.txt,
+plastid_envelope_GO.txt, plastid_GO.txt, plastid_stroma_GO.txt,
+vacuolar_membrane_GO.txt, vacuole_GO.txt. These files
+were copied here, and deleted once I've used them. Output file
+is combined_marek.txt.

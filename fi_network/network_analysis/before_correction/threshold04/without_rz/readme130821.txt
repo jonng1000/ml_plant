@@ -1,0 +1,28 @@
+Folders
+diff_ways: different ways of calculating ranks of feature importance values
+
+Files
+fi_gm_hist.png, fi_gm_norm_hist.png: histogram of geometric mean of feature
+importance values, _norm means normalised
+fi_mr_hist_50bins.png: histogram of MR, has 50 bins, has feature importance values of 0
+gmean_impt_fi.txt: geometric mean of feature importance values
+impt_features_ranks.txt: ranks of features
+mutual_ranks.txt: mutual ranks of features:
+p_values_700.txt, p_values_740.txt: p-values from different thresholds from
+permutation tests
+prop_ab_700.txt, prop_ab_740.txt: proportions of different feature categories
+selected_ranks.txt: selected ranks of feature importance
+
+Scripts
+create_mutual_ranks.py: creates mutual ranks from selected features
+explore_gfi.py: calculates geometric mean from all feature importances
+explore_gm_fi.py: explores geometric mean of feature importance and 
+draws histogram showing its distribution, similar to explore_gfi.py so not sure why there's two
+of such scripts
+explore_mr_prop.py: explores mutual rank (MR) distribution  and obtain proportion 
+of feature categories for high and low MR clusters
+explore_mranks.py: plots mutual ranks distribution
+perm_test_prop.py: perm_test_prop.py: permutation test on features to see if there's any significant
+difference between two clusters of features observed from mutual rank
+distribution
+select_fi_ranks.py: selects only important features and assign them ranks

@@ -1,0 +1,3 @@
+Downloaded these genes from the TAIR website, but its not correct as at least 1 gene (CUP1)
+with "is not a member of a SM pathway" relationship status is included, so don't take this as
+reliable

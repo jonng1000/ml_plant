@@ -1,0 +1,28 @@
+Folders
+output: output from ml workflow
+output_zipped: zipped output from ml workflow
+
+Files
+combined_boxplot.png, combined_hist.png: visualises score distributions of features,
+histogram has log10 y axis
+combined_hist_nolog.png: histogram score distribution of features, y axis is not log10
+class_labels_rcf.txt: list of the rest of categorical features
+(non GO terms and DGE) as targets for ml workflow
+high_rest_catf_features.txt: high scoring GO features, F1 >= 0.7, for building
+network
+score04_rest_catf_features.txt: same as high_rest_catf_features.txt but with F1 >= 0.4
+
+Scripts
+create_rcf_targets.py: creates list of the rest of categorical features
+(non GO terms and DGE) as targets to use in my ml workflow
+visualise_boxplot_scores_catf.py, visualise_hist_scores_catf.py: 
+visualises distributions of oob F1 scores of categorical features,
+those which scored well and those which did not. These scripts produce different types of plots.
+Histogram script has log10 y axis. 
+explore_scores.py: explore scores from ml workflow
+
+Notes:
+Plots of scores may not be accurate as 54 tti_ prefixed features have been mislabeled as continuous 
+when they should have been categorical, hence this would have changed the frequency of scores, and
+affect the plots. However, these plots would not be used as they are too general so nevermind.
+

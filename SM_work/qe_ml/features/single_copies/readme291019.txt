@@ -1,0 +1,9 @@
+singe_copy_GMSM.txt is the file which has the single copy feature (0/1), which
+is used for ML.
+
+211119
+no_labeled p-value 1.0 no_labeled avg 0.2634435106295011
+p-values for nl genes missing from permutation test script,
+hence added here, manually added this to .csv file with all this info as well
+also added code to produce it in script, can do this without rerunning script since the
+ans isnt likely to vary much

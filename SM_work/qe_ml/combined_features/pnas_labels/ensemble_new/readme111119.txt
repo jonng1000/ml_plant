@@ -1,0 +1,3 @@
+first run on 111119 morning has an error, ytest_df is not properly made, and this is impt as
+i need 100 of them saved, since at every iteration i create a new test, and and use it to score my models.
+readme file in workstation folder with this data, also states this info.

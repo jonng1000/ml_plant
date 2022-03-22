@@ -1,0 +1,14 @@
+Files
+scores_overall.xlsx: scores of feature categories with only 1 feature each
+*.png: histogram and violin plots of feature category scores
+
+Scripts
+get_go_scores.py: get GO scores
+plot_catf_scores.py, plot_contf_scores.py: plot scores of categorical and continuous 
+feature categories respectively
+
+Notes
+go_combined_hist.png: renamed from combined_hist.png in
+D:\GoogleDrive\machine_learning\ml_go_workflow\go_runs\fixed_hps
+dge_combined_hist.png: renamed from combined_hist.png in
+D:\GoogleDrive\machine_learning\ml_go_workflow\dge_runs

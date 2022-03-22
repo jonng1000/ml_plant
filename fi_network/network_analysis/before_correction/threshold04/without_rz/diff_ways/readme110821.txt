@@ -1,0 +1,14 @@
+Files
+*ranks.txt: min/max/avg ranks from feature importance values
+*.png: histograms showing distribution of min/max/avg ranks 
+from feature importance values
+
+Scripts
+explore_ranks.py, explore_diff_ranks.py: explores different kinds of ranks and draws 
+histogram showing its distribution
+create_avg_ranks.py/create_max_ranks.py/create_min_ranks.py: creates
+min/max/avg ranks from feature importance values
+
+Notes
+File paths for the above scripts may be wrong since I have shifted them around, so if
+I am rerunning them, may need to change the paths

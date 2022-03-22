@@ -1,0 +1,23 @@
+Files
+allGOs_mr.png: GO terms only, histogram of mutual ranks of feature importance
+GO_fi.png: GO terms only, histogram of feature importance
+GO_fi_ranks.png: GO terms only, histogram of ranks of feature importance
+nonzero_GO_fi_ranks.png: GO terms only, histogram of ranks of feature importance,
+removed feature importances of 0
+nonzeroGOs_mr.png: GO terms only, histogram of mutual ranks of feature importance,
+removed feature importances of 0
+allGOs_mr.txt: GO terms only, mutual ranks of feature importance
+GO_fi.txt: GO terms only, feature importances
+nonzeroGOs_mr.txt: GO terms only, mutual ranks of feature importance,
+removed feature importances of 0
+
+Scripts
+all_GO_ranks.py: creates ranks from feature importance values of GO targets
+calculate_mr_allGOs.py: calculate mutual ranks from feature importance values of GO targets
+calculate_mr_nonzeroGOs.py: calculate mutual ranks from feature importance values of 
+GO targets, removed feature importances of 0
+create_fi_file.py: create feature importance file, in a matrix
+explore_fi.py: plots histogram of feature importance values
+explore_mr.py: plots histogram of mutual ranks of feature importance values
+nonzero_GO_ranks.py: creates ranks from feature importance values of GO targets, 
+removed feature importances of 0

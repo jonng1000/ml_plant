@@ -1,0 +1,16 @@
+Folders:
+outdated: Contains dge_1HE_edited.txt file, edited version of dge_1HE.txt, as Marek
+wanted it to have NA to represent missing values. Used for machine learning work
+before 2nd week of Dec 2020, but after that, am not using it anymore, using 
+dge_1HE.txt instead
+
+Files
+*.png: pics for data exploration, produced by the *.py script here
+E_GEOD*.txt files: sample files for data exploration
+dge_1HE.txt: 1HE DGE data downloaded by myself, data and scripts for this
+are in the workstation /home/jon/rna_processed
+dge_1HE_edit.txt: edited version of dge_1HE.txt, used for ml work
+
+Scripts
+*.py: use for plotting in data exploration
+edit_dge.py: does some v simple editing to make dge data suitable for ml work

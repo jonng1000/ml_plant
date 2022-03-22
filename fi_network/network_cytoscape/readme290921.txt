@@ -1,0 +1,12 @@
+Folders
+overall_network: files analysing and depicting overall network properties
+less_impt_visualisations: less important files analysing network, can ignore
+DGE_network: files analysing and depicting DGE network properties
+edge_counts: counts of edges connected to features, according to different categories,
+features_diff_cat: like edge_counts, feature counts according to different categories, per feature,
+this is done at marek's request, but not useful
+data obtained from cytoscape 
+other_clusters: other clusters of note
+for_sk: complete cytoscape files for web development
+
+Files

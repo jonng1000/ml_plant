@@ -1,0 +1,26 @@
+Run using MM's way of splitting into train and test by stratifying, which means
+the proportion of 0s and 1s are maintained in test set.
+Ran on desktop once with 1 loop, tpr of 71%
+Ran on desktop twice, each time using 3 loops, first 3 loops gave tpr of abt 71%,
+and next 3 loops gave tpr of abt 67%
+Ran on workstation 3 times, 100 loops:
+	- first set, tpr of 57%
+	- second set, tpr of 78%
+	- third set, tpr of 52%
+	- fourth set, tpr of 66%
+	- fifth set, tpr of 71%
+	- sixth set, tpr of 69%
+Anyway, will take the sixth one as the final result. All others have been overwritten. If wanna repeat,
+just run slf1_v2.py script in workstation a few times.
+
+This is strange, but when I run it without stratifying (3-4 times, 5 loops each), 
+I also get inconsistent results (50-70% tpr). This is on my own SVM, without modifications from
+MM's script. Didn't save the desktop results above because I didn't think its impt, if wanna repeat this,
+go find the slf1_amp.py script, reduce number of hyperparameters to that of svm_loops.py,
+and run it a few times.
+
+If wanna repeat the above, remember to place proc_PNAS_data_ML.csv, which is the dataset, in
+this folder for the scripts to take in.
+
+Ran slf1_MM.py in desktop and workstation, but its too intensive, computers take a very long time,
+Marek said it took him 3 days to run eveything so I don't have to do this now.

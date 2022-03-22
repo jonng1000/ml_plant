@@ -1,0 +1,9 @@
+*.ai: .ai files to make pics for publication, can guess order based on file name + content,
+OneNote entry
+*.svg: .svg files to make pics for publication, can guess order based on file name + content
+*.cys: cytoscape files to analyse networks and exporting pics for publication, can guess 
+order based on file name + content
+*.jpg: .jpg files to make pics for publication, can guess order based on file name + content
+*.csv: .csv files to help analyse network and make pics for publication, 
+can guess order based on file name + content
+- e.g. all_edges_ranks.csv: edges with weights (invert_ranks)

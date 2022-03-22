@@ -1,0 +1,13 @@
+Folders
+results: results from cores test
+
+Files
+*.svg: pics of scores and time taken
+*.png: png version of time taken pic
+class_targets_go.txt: GO class targets for ml workflow
+cores_update270421.pptx: my results and conclusions for this work
+
+Scripts
+plots_cell_loc_st.py: plots scores and time taken for 16 cell locations
+plots_cores_time.py: does the same thing as plots_cell_loc_st.py but its better,
+as it shows error bars

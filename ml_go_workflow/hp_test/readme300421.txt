@@ -1,0 +1,82 @@
+Folders
+all_results: results from all kinds of hp test
+- output_16chp: output from my ml workflow, 16 GO classes, selected hps which have
+been optimised
+- output_71chp: output from my ml workflow, 71 GO classes, selected hps which have
+been optimised
+- output_16g1hp: output from my ml workflow, 16 GO classes, most freq hp group selected - 
+group 1
+- output_16g2hp: output from my ml workflow, 16 GO classes, most freq hp group selected - 
+group 2
+- output_71g1hp: output from my ml workflow, 71 GO classes, most freq hp group selected - 
+group 1
+- output_71g2hp: output from my ml workflow, 71 GO classes, most freq hp group selected - 
+group 2
+- results_16c_ohp: results for 16 GO classes (marek selection), optimised hps
+via random search
+- results_71_ohp: results for 71 GO classes, optimised hps
+via random search
+- results_16c_dhp: results for 16 GO classes (marek selection), default hps
+- results_dhp: results for 71 GO classes, default hps
+repeat_aug2021: repeat hp test in aug 2021, to ensure my original run was correct
+
+all_plots: plots from all kinds of hp test
+- boxplot_16c_chp_acc.png, boxplot_16c_chp_f1.png: boxplots of scores, 16 GO classes, 
+selected hps which have been optimised
+- boxplot_16c_ohp_acc.png, boxplot_16c_ohp_f1.png: boxplots of scores, 16 GO classes, 
+optimised hps via random search
+- boxplot_chp_acc.png, boxplot_chp_f1.png: boxplots of scores, 71 GO classes, 
+selected hps which have been optimised
+- boxplot_ohp_acc.png, boxplot_ohp_f1.png: boxplots of scores, 71 GO classes, 
+optimised hps via random search
+- compare_16c_cdhp_acc.png, compare_16c_f1_cdhp.png: lineplot comparing scores between selected
+hps which have been optimised, and default hps, 16 GO classes
+- compare_16c_odhp_acc.png, compare_16c_f1_odhp.png: lineplot comparing scores between optimised
+hps via random search and default hps, 16 GO classes
+- compare_cdhp_acc.png, compare_cdhp_f1.png: lineplot comparing scores between selected
+hps which have been optimised, and default hps, 71 GO classes
+- compare_odhp_acc.png, compare_odhp_f1.png: lineplot comparing scores between 
+optimised hps via random search, and default hps, 71 GO classes
+- dhp_oob_f1.png, dhp_oob_acc.png: lineplot showing scores of 71 GO classes, default hps
+
+hp_freq_info: work done on analysing hp freq results from hp tests
+- all_hp_counts.txt, all_hp_counts_diff.txt: output from my analyse_hp.py,
+analyse_hp_diff.py scripts, contains hp counts for plotting
+- hp_counts_combined.xlsx: excel sheet from all_hp_counts.txt, all_hp_counts_diff.txt, compiled
+version for supp table in publication
+- plot_hp_diff_pub.py: plots freq of hp groups, cuts off x-axis where
+logical to do so, for publication
+- plot_hp_counts.py, plot_hp_counts_diff.py: plots hp tests results, see script for specifics
+- analyse_hp.py, analyse_hp_diff.py: processes hp tests results into a format
+which is convenient for plotting, see script for specifics
+- *.svg, *.png: pics of hp results and scores
+
+compare_random: done early Oct 2021, basically comparing my chosen hps with real
+ml data and randomly shuffled ml data
+
+outdated: has output_16chp and output_71chp not sure what it is, so ignore
+
+Files
+hp_update270421.pptx: my notes on my results, conclusions, and future plans
+*_allhps.png: pics from comparing scores from diff types of hps selected
+ - those that have _v2: improved versions, for publication
+GO_term_desc.txt: maps GO terms to their descriptions
+GO_term_desc.xlsx: excel version of GO_term_desc.txt, for publication
+hp_targets_desc.txt: sizes of GO terms for some GO categories, to help
+design the corresponding supplementary table with such info, for HP optimisation
+
+Scripts
+compare_ms.py: checks to see if 16 GO classes from marek's selection is in
+the 71 classes used for my hp test
+plots_go_scores_oobf1.py: plots hp tests scores, see script for specifics
+plot_score_compare.py: compares model scores between default and optimised hps
+plot_score_compare_v2.py: Updated version of plot_score_compare.py
+plot_score_compare_all.py: compares model scores between different types of hps used
+plot_lineplot_compare_all.py: same as plot_score_compare_all.py, but diff plot is drawn
+explore score_allhps.py: just some basic exploring of scores
+plot_lineplot_compare_all_v2.py: improved version of plot_lineplot_compare_all.py,
+for publication
+testing_models.py: just to figure out how to unpack pickled models
+
+Misc (can delete it once i think its not needed) 
+redo comparision between chosen n default hps, just to check

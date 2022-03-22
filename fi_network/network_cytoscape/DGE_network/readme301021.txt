@@ -1,0 +1,5 @@
+Folders
+all_DGE_grps: cytoscape and associated files, looking at overall and individual DGE groups
+pairwise_DGE: cytoscape and associated files, looking at pairwise comparison of DGE groups
+
+Files

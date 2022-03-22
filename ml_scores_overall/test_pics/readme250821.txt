@@ -1,0 +1,8 @@
+Files
+go_dom_box.png, go_dom_hist.png: boxplot and histogram respectively, of GO scores according to
+top level domains
+test*png: test heatmap pics for categorical and continuous feature categories
+
+Scripts
+*heatmap*.py: test heatmap scripts
+plot_go_domains.py: plot GO scores according to top level domains

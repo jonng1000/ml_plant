@@ -1,0 +1,21 @@
+Folders
+results: results from time trial
+
+Files
+*.svg, *.png: pics of scores
+scores_pub_f1.svg, scores_pub_f1.png: f1 score, for publication. Files with v2 are their
+improved versions
+time_cel_loc.xlsx: manually created file showing time taken for all ml models used,
+time taken is from log file produced from my ml workflow
+time_cel_loc.txt: .txt version of time_cel_loc.xlsx, used for plotting
+update_marek_230421.pptx: my notes on results, conclusions, future plans
+GO_term_desc.txt: maps GO terms to their descriptions
+GO_term_desc.xlsx: excel version of GO_term_desc.txt, for publication
+
+Scripts
+boxplot_cell_loc_f1.py: boxplot of scores
+plots_cell_loc_scores.py: plots scores
+plots_scores_pub.py: same as plots_cell_loc_scores.py, but modified to make plots nicer,
+for publication
+plots_scores_pub_v2.py: improved version of plots_scores_pub.py
+time_analysis.py: analyse results from ml workflow

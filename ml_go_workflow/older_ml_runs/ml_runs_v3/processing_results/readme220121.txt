@@ -1,0 +1,14 @@
+Folders:
+dge_results: results when 10 DGE experiments are iteratively used as class labels
+go_results: results when 20 GO terms are iteratively used as class labels
+
+Scripts:
+plots_dge_scores.py: plots DGE scores
+plots_fi_v3.py: plots feature importance
+plots_go_scores.py: plots GO terms scores
+
+Files:
+*.svg an *.jpg: *.svg are f1 scores from plotting scripts, edited them in illustrator
+to create *.jpg files. Scripts orginally produce f1, precision and recall pictures,
+but deleted precision and recall pictures, and renamed f1 pictures, hence their 
+names are different from what the scripts says

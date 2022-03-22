@@ -1,0 +1,10 @@
+First batch of ml work end 2019
+qe_ml: use pnas data and diff ml algorithms for GM and SM gene classification,
+work done for qe
+
+Second batch of ml work early 2020 onwards
+pnas_work: 
+ - contains work done using pnas data
+ - contains RF_PNAS and GO_features folders
+  - RF_PNAS: Using RF on PNAS dataset
+  - GO_features: ml work on predicting GO classes

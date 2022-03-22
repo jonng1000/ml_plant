@@ -1,0 +1,48 @@
+Folders
+all_data: all features from their respective folders, to find out their details go to
+D:\GoogleDrive\machine_learning\my_features and look at each feature folders
+- put all features here so that its easy to accesss them for ml work
+
+contf_runs: ml workflow on all continuous features as targets
+
+cores_test: test to see how time taken to run ml workflow varies with number of cores
+
+dge_runs: ml workflow on all DGE features as targets
+
+go_runs: ml workflow on all of my GO classes
+
+hp_test: test to deterine what are the best hps to use with my ml workflow
+
+older_ml_runs: older ml work done from Oct 2020 to Mar 2021, on the unfinished set of featues
+
+rest_catf_runs: ml workflow on all other categorical features (non GO and DGE) as targets
+
+time_trial: measuring time taken for different ml models (edited the organisation of these files
+130821)
+
+tti_runs: Corrected runs on 54 tti prefixed features, this are supposed to be categorical features
+but have been mislabelled as continuous. So downstream analysis of features will need to use this,
+together with the other results (scores, feature importance etc), and delete the wrong results
+
+Files
+feature_type.txt: List of feature types for ml work
+ml_dataset.txt: ML dataset with all features
+ml_dataset_dc.txt: Downcasted ml dataset for ml work
+test_dataset.txt: small test dataset to test my ml scripts, produced from test_dataset.py,
+has GO:0016020 and GO:0005829 GO classes for testing
+- scripts with this name but with diff prefixes: for DGE, continuous, other categorical features
+
+Scripts
+combined_data.py: combines all features in all_data folder to produce complete dataset for ml,
+outputs ml_dataset.txt
+downcast_ml_v2.py: Takes ml_dataset.txt and downcasts it so that simpler datatypes are used,
+which would save memory. Outputs ml_dataset_dc.txt.
+test_dataset.py: creates a small test dataset to test my ml scripts, for GO terms
+- scripts with this name but with diff prefixes: for DGE, continuous, other categorical features
+
+Note
+Discovered 170821: For all 54 tti prefixed features, they have been mislabeled as continuous 
+when they should have been categorical (tti features are labeled as ttr, tti is categorical 
+while ttr is continuous), corrected ath_ttr_clusters.txt in all_data folder, ml_dataset.txt 
+and ml_dataset_dc.txt 
+

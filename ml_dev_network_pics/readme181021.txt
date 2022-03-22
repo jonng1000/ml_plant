@@ -1,0 +1,12 @@
+Folders:
+outdated_pics: outdated pics so can ignore
+- hp_compare_ran.ai, hp_compare_ran.png: comparing hp testing workflow on random and non random
+data
+
+Files
+clustermap_sig.pdf: clustermap, pdf version to make publication pics
+nonzero_mr.pdf: MR distribution, pdf version to make publication pics
+*.ai: .ai files to make publication pics, ignore file with draft in it, can guess file's
+contents by looking at its name and contents
+*.jpg, *.png: publication pics for paper, can guess file's contents by looking at its 
+name and contents

@@ -1,0 +1,4 @@
+all_children_GO0019748.csv and all_children_GO0044238.csv taken from
+D:\GoogleDrive\papers reading\Jon's papers\pnas machine learning GM SM\replication\data_sets_JN\
+getting_targets\M2_GO\jupyter_goatools
+

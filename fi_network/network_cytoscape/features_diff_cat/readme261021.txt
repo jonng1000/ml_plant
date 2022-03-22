@@ -1,0 +1,23 @@
+Scripts
+label_edges_diff_cat.py: count number of edges per feature, and divide this number 
+into features belong to the same and different category
+
+Files
+features_diff_cat.cys: cytoscape file looking at feature network, where specific features,
+based on their edge counts (divided into different categories), are looked at
+overall_edges.csv: list of all edges in the network, obtained from
+D:\GoogleDrive\machine_learning\fi_network\network_cytoscape\overall_network
+edges_category_type.txt: edge counts per feature, which is divided into features 
+belonging to the same and different category
+feature_counts*.txt: from edge counts file (edges_category_type.txt is associated with it),
+top and bottom 10 number of features according to edge counts, 
+this ranking ignores the top 2 features, as they are coe_cluster_size and 
+agn_cluster_size, which are obvious from my overall network analysis,
+and is not useful. Edge counts file is at
+D:\GoogleDrive\machine_learning\fi_network\network_cytoscape\edge_counts\sorted_all_nodes_counts.txt
+- feature_counts.txt: top 10 features
+- feature_counts2.txt: next top 10 features
+- feature_counts_bot.txt: bottom 10 features
+- feature_counts_bot2.txt: next bottom 10 features
+new_names.txt: has detailed names (more useful) for GO and DGE features, from
+D:\GoogleDrive\machine_learning\fi_network\network_cytoscape\overall_network\for_marek

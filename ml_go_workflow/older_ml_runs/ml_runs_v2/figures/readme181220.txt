@@ -1,0 +1,15 @@
+Folders
+outdated: outdated pics produced when i was playing around w the plots to see which
+ones are good, can ignore
+- ran_fi: feature importance values when features have randomised values
+- trial1_dec_wk1: exploring my results after my ml runs were finished
+- trial2_dec_wk2: ditto, more exploratory work
+- with_ran_fv: feature importance values for cell locations, those values 
+corresponding to when features have randomised values, are in red lines
+png_figs: png pics of feature importance values for cell locations, these were
+reproduced as .svg pics
+
+Files
+*.svg: plots used to visualise results
+fi_figs.png: feature importance for 4 cell locations, used for 2TAC presentation
+fi_figs.ai: editing pic showing feature importance for 4 cell locations

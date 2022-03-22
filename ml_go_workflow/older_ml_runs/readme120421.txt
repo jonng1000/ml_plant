@@ -1,0 +1,37 @@
+Folders
+ml_runs:
+Running my ml pipeline, tweaking it and looking at the results
+
+ml_runs_v2:
+Second version of the above, made improvements to my workflow
+
+ml_runs_v3:
+Third version of the above, made improvements to my workflow
+
+ml_runs_v4:
+Fourth version of the above, made improvements to my workflow. Also has hyperparameter (hp)
+and time tests. Time tests is to time the amount of time taken for various ml algos on my
+dataset
+
+trial_run: tested a workflow on my dataset, using sklean
+pipelines and columntransformer to create a better workflow.
+Explained in more details below
+- run_rf_1tts.py: Runs random forest forest with one train
+test split. Uses pipelines and columntransformer to create
+an efficient, clean workflow which trains model while preventing
+data leakage
+- run_rf_cv.py: Based on run_rf_1tts.py, but runs model with 5-fold
+cv instead
+- run_rf_mr.py: Based on run_rf_1tts.py, but runs model with
+undersampling of the majority class, and 100 train test splits.
+Produces scores stored in Golgi_apparatus_scores.txt
+- explore_scores.py: Plot boxplot of random forest scores, takes in
+Golgi_apparatus_scores.txt and produces all_scores.png
+Golgi_apparatus_GO.txt: dataset for model training
+Golgi_apparatus_scores.txt: scores after 100 models were trained
+all_scores_png: boxplot of scores from Golgi_apparatus_scores.txt
+
+misc_data_processing:
+Not sure what these scripts and files are for, could have been useful for data_preprocessing and
+data_preprocessing_v2 folders, so can check this folder if I am doing work related to these 2 folders
+in the future

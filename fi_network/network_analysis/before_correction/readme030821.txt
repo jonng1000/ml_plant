@@ -1,0 +1,13 @@
+Folders
+no_filter: work done using all features with their ranks, without any filtering of features
+used
+testing: testing stuff, to explore why mutual rank distribution is weird (before removing
+0 feature importance values)
+- tests are done by only looking at GO targets
+threshold04: looking at mutual ranks with a threshold of 0.4 (F1 and R sq)
+threshold07: looking at mutual ranks with a threshold of 0.7 (F1 and R sq), note all these
+are done without filtering out feature importance values of 0, so its considered outdated
+
+Files
+
+Scripts

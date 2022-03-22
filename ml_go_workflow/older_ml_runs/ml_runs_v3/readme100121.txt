@@ -1,0 +1,18 @@
+Folders
+all_data: all the ml data used for ml
+managing_go_labels: folder containing my work in removing parent and child terms
+from go terms when they are used as the class label for prediction
+processing_results: stores results from my ml workflow, and has scripts to generate
+plots to visualise them
+test_env: folder just for testing
+
+Scripts:
+*.py scripts: various scripts used for assembling ml data, downcasting, and running
+ml models
+
+Files
+class_targets_human_readable.xlsx: human readable list of targets
+class_targets.txt: from class_targets_human_readable.xlsx, only has go terms
+class_targets_dge.txt: from class_targets_human_readable.xlsx, only has dge terms
+class_targets_go.txt: from class_targets_human_readable.xlsx, only has GO terms
+All other *.txt: various files used for ml work

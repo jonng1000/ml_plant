@@ -1,0 +1,13 @@
+Folders
+full_network: overall network files
+single_pairs: pairs of DGE categories
+- all_DGE_179.PNG: all DGE expts, 179 nodes
+- DGE_[name1]_[name2]_[int].svg: DGE pics, name1: DGE category, name2: another DGE
+category, int: num of nodes -> can guess the categories from the short forms used
+- [name1]_[name2]_DGE_[int].svg: DGE pics, variables mean the same as the above
+
+Files
+*.pdf, *.svg pics: various types of DGE pics
+*.cyjs, *.sif: various types of DGE network files
+*legend*.*: pictures containing diff types of legends
+exploring_DGE.cys, DGE_layout_170921.cys: DGE network file

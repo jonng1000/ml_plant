@@ -1,0 +1,54 @@
+find_lca_simple.py -> finds lca for each gene, called _simple as it doesnt create
+columns corresponding to each taxon and uses 1 and 0 to see which gene belongs to which taxon.
+Intead, has one category called taxon, which has all the lca names. Realised that this approach
+is easier to handle than creating multiple columns (which is done by find_lca.py), hence added
+_simple at the end of the script name. Produces genes_lca.txt
+
+
+visualising_ratios_simple.py -> plots graph to show percentage of genes in each GM/SM/no_label
+category, based on find_lca_simple.py, hence it has _simple at the end. Also, uses genes_lca.txt
+as input.
+
+In tests folder
+test_counts.tsv, test_plot.txt, test_plot.xlsx,
+test1.png, test3.png -> datasets for testing different ways of
+processing and displaying data, can ignore
+
+In others folder 
+find_lca.py -> same as above, but more complicated as it creates one 
+column per taxon. Don't need to use. Produces genes_LCA.tsv.
+
+comparing_phylo.py -> classifies genes into GM/SM/no_label, and whether it belongs to land plants
+or not, and does permutation test to see if there's any difference in their proportion compared to
+random chance. Produces land_plants_ratios.csv. Also produces genes_landplants.txt which shows
+whether or not a gene belongs to a land plant group.
+
+compare_phylo_grps_plots.py -> plots graphs based on the output of comparing_phylo.py. Produces
+the following graphs:
+	- all_genes_cat.png -> shows number of genes  across all categories, add number of  1s
+	from each category to find the number of genes from each category and taxon. Can ignore 0s
+	- only_genes_1.png -> basically shows the above description more clearly.
+	- only_genes_1_GMSM.png -> the above, but only GM and SM genes
+	- ony_genes_1_percent.png -> the above, but in %
+	- only_genes_1_percentGMSM.png -> the above, but only GM and SM genes
+	- only_GMSM_genes_cat.png -> same as all_genes_cat.png, but only GM and SM genes
+	- percent_all_gene_cat.png -> same as all_genes_cat.png, but in percentage
+	- percent_cat.png -> percentage of genes belonging to each category (GM/SM/no_label)
+	- percent_only_GMSM_gene_cat.png -> same as percent_all_gene_cat.png, but only showing
+	GM and SM
+
+visualising_ratios_lp.py -> plots graphs to see ratios, uses land_plants_ratios.csv as input.
+
+
+Futher notes
+Gene counts are very high so I tried  to remove the no_label group, which accounte for the majority
+of the counts, but  the bars are not very informative. Marek suggested I use a log scale but it
+doesnt work, since the bars are still hard to read.
+
+
+genes_lca.txt is the file which has last common ancestor feature (phylostrata), which
+is used for ML.
+
+221119
+visualising_processed_ratios_simple_v2.py is made from visualising_processed_ratios_simple.py
+to produce plots in .svg. Improved code to sort taxon in order and immproved asethetics.

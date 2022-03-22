@@ -1,0 +1,65 @@
+data_creation_v2: Contains files scripts used for data
+creation. Improved based on the data_creation folder
+and contains more stuff
+
+Folders
+outdated: outdated stuff, can ignore
+
+- process_ath_dge.py: preprocessing differential gene
+expression file. Takes in DGE and produces
+edited_Ath_dge.txt (outdated DGE work from Marek)
+- edited_Ath_dge.txt: output file from process_ath_dge.py
+(outdated DGE work from Marek)
+- DGE: input file for process_ath_dge.py
+(outdated DGE work from Marek)
+
+Scripts
+- adding_labels.py: Takes in a dataset, combined_data.txt,
+and adds class labels to it. These are positive and negative
+labels. Genes which don't have either labels are removed.
+Produces Golgi_apparatus_GO.txt, which is stored in the
+parent folder of data_preprocessing
+- analyse_interpro_v2.py: Takes in the interproscan output
+file, ath_aa_processed.fa.tsv, and does 1 hot encoding to
+convert protein domains into binary features. Output file
+is protein_doms.txt
+- combine_data.py: Combines edited gene expression features
+with protein domain features to create a dataset. Takes in
+edited_Ath.txt and protein_doms.txt. Output file is
+combined_data.txt
+- process_ath_jtk.py: preprocessing diurnal gene
+expression file. Takes in JTK.Ath_Mat.txt and produces
+edited_Ath_jtk.txt, edited 251120
+- process_ath_og.py: preprocessing orthogroups file. Takes in Orthogroups_Jon.txt 
+and produces edited_Ath_og.txt.
+- process_ath_ps.py: preprocessing phylostrata file. Takes in gene2node.txt 
+and produces edited_Ath_ps.txt.
+- process_ath_sc.py: preprocessing orthogroups file. Takes in Orthogroups_Jon.txt 
+and produces edited_Ath_sc.txt.
+- process_ath_spm.py: preprocessing gene
+expression specificity file. Takes in Ath.spm and produces
+edited_Ath_spm.txt
+- process_ath_td.py: preprocessing orthogroups file. Takes in Orthogroups_Jon.txt,
+together with Athaliana_447_Araport11.gene.gff3 and produces edited_Ath_td.txt.
+- process_ath_tpm.py: preprocessing gene
+expression file. Takes in Ath_matrix.av and produces
+edited_Ath_tpm.txt
+
+Files
+- Ath_matrix.av: input file for process_ath_tpm.py
+- Athaliana_447_Araport11.gene.gff3: genomic information file for
+process_ath_td.py
+- protein_doms.txt: output file from analyse_interpro.py
+- protein_doms.txt.gz: .gz file from protein_doms.txt
+- Ath.spm: input file for process_ath_exp.py
+- edited_Ath_jtk.txt: output file from process_ath_jtk.py, edited 251120
+- edited_Ath_og.txt: output file from process_ath_og.py
+- edited_Ath_ps.txt: output file from process_ath_ps.py
+- edited_Ath_sc.txt: output file from process_ath_sc.py
+- edited_Ath_spm.txt: output file from process_ath_spm.py
+- edited_Ath_td.txt: output file from process_ath_td.py
+- edited_Ath_tpm.txt: output file from process_ath_tpm.py
+- gene2node.txt: phylostrata file for process_ath_ps.py
+- JTK.Ath_Mat.txt: diurnal gene expression file for process_ath_jtk.py
+- Orthogroups_Jon.txt: orthogroups file for process_ath_og.py,
+process_ath_sc.py, and process_ath_td.py

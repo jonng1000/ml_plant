@@ -1,0 +1,4 @@
+ath_ogrpGMSM_counts.txt and plotting_GMSM_counts.py are wrong files, don't need to use them.
+
+gene_families.txt is the file which has the gene family size feature, which
+is used for ML. Produced by ind_gene_fams.py.

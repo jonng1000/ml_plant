@@ -1,0 +1,5 @@
+This is a jupyter notebook file which teaches me how to use GOAtools to select all children
+GO terms from a specific GO term. The actual notebook was used to select all child SM GO terms
+(but doesnt include the parent SM term).
+
+For some strange reason, conda install didnt work, had to use easy_install

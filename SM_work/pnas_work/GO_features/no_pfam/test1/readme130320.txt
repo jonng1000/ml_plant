@@ -1,0 +1,15 @@
+Files and scripts: raw data, data preprocessing, splitting into
+processed data (which are _*GO.txt files)
+
+Folders
+output: 
+- output and pictures from ml workflow.
+- has a earlier folder with a repeat of test1 results,
+this had wrong indicies on the graph, so repeated test1 and put
+the wrong results in this folder, so can ignore this
+making_dataset: d1*.txt and d2*.txt files are the raw PNAS data.
+They are processed by building_dataset_edit.py, preprocessing.py
+and proc_suba.py to form the final dataset, processed_suba.txt,
+which is used for downstream work. test_data_nopfam.txt
+and preprocessed_data.txt are semi processed data sets used
+in the construction of processed_suba.txt.

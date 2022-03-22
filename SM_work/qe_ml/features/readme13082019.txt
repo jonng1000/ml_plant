@@ -1,0 +1,15 @@
+all_children_GO0019748.csv and all_children_GO0044238.csv taken from
+D:\GoogleDrive\papers reading\Jon's papers\pnas machine learning GM SM\replication\data_sets_JN\
+getting_targets\M2_GO\jupyter_goatools
+
+Note that the scripts here got typo:
+selecting_all_species.py, selecting_plants.py -> df_rem_not = df[df['Annotation_qualifier'] != 'not']
+this corrected df not used for subsequent lines, so results are slightly off. but nvm as this doesnt
+change it drastically.
+
+tandem_duplicated folder contains scripts and output to make the
+tanndem duplicated feature
+ - contains Arabidopsis_thaliana.TAIR10.44.gff3 which is downloaded from ensemble plants
+ - contains AT_short.gff3 which is a shorter version of Arabidopsis_thaliana.TAIR10.44.gff3,
+   used to test my .gff parser to make sure it works
+

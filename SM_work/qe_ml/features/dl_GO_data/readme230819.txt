@@ -1,0 +1,1 @@
+output from all_grps_GO.py is stored in output_all_grps_GO folder.

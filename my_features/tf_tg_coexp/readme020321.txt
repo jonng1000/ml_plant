@@ -1,0 +1,39 @@
+Folders
+outdated: outdated files, basically just testing to see if viewing the TF-TG graph as directed
+and undirected has any difference in MCODE output
+
+Files
+tftg_reg_net.abc: transcription factor-target gene (TF-TG) regulatory network input file for mcl,
+each row is an edge between TF and its TG
+tftg_reg_net.graphml: TF-TG graph in a graph format
+dump.data.mci.I20: output from MCL, uses default inflation value so am using it for my work
+dump.data.mci.I40: same as above, but uses an inflation value of 4, so am not using it
+Supplementary table_3_edited.xlsx: supplementary table 3 from the TF-TG paper,
+https://academic.oup.com/nar/article/48/20/11347/5940494 -> this is used to get the TF-TG
+features for ml
+ath_ttr_clusters.txt: TF-TG network clusters for ml
+feature_name_map.txt: used as a guide to create TF-TG features for ml used by
+process_tf_tg_coexp.py
+tf_raw_features.txt, tg_raw_features.txt: raw features file, used tgt with feature_name_map.txt
+by process_tf_tg_coexp.py to create features for ml
+reg_nwt_centrality_features.txt: gene regulatory network features for ml
+tf_tg_network.txt: TF-TG network information, used to generate .graphml and .abc files for
+downstream work
+tt_coexp_features.txt: TF-TG coexpression features, used for ml
+(turns out, all tf data is found in tg data, so dont need to use it)
+
+Scripts
+centrality_nx.py: calculate network centrality features, takes in tftg_reg_net.graphml and
+produces reg_nwt_centrality_features.txt
+convert_nx_abc_tftg.py: converts network in tabular format into graphml and abc format. Takes in
+tf_tg_network.txt, and produces tftg_reg_net.graphml and tftg_reg_net.abc
+explore_features.py: explore finished features
+process_mcl.py: processes mcl output, takes in dump.data.mci.I20 and produces
+ath_ttr_clusters.txt
+process_tf_tg_coexp.py: takes in TF-TG features and processes them to select appropriate
+features for ml, produces tt_coexp_features.txt
+
+Note
+Discovered 170821: For all 54 tti prefixed features, they have been mislabeled as continuous 
+when they should have been categorical (tti features are labeled as ttr, tti is categorical 
+while ttr is continuous), corrected process_mcl.py and its output, ath_ttr_clusters.txt

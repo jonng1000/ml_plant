@@ -1,0 +1,32 @@
+Folders
+all_data: all my features, copied from their respective folders
+labels_16_data: contains 16 cellular location datasets, for ml training
+results_c16: contains model scores after ml training on all 16 cellular 
+location datasets
+- scores_c16: 5 scores, from each ml algo used
+- plot_scores_c16.py: script to generate pics from scores in scores_c16 folder
+- *.png: pics from plot_scores_c16.py
+- test_runs: output and pics from running draft ml scripts, just for testing
+
+Files
+feature_type.txt: Shows which features are categorical and continuous, based on
+their prefix
+ml_dataset.txt: All features in one file, produced from assemble_ml_data.py
+ml_data_label.txt: All features and one class label in one file, used for ml.
+Produced from label_ml_data.py
+ml_16_labels.txt: Produced from all_labels_ml.py
+ml_data_label_scores.txt: ml scores, produced by running ml*.py scripts
+
+Scripts
+assemble_ml_data.py: Assembles all features into one file for downstream ml work.
+Takes in all files from all_data folder, and produces ml_dataset.txt
+all_labels_ml.py: Labels my ml dataset with all 16 class labels, 
+takes in ml_dataset.txt and produces ml_data_labels.txt
+label_ml_data.py: Labels my ml dataset with class labels, takes in ml_dataset.txt
+and produces ml_data_label.txt
+ml_run_mqe_d.py: Less demanding version of ml_run_mqe.py (uses less cores), as
+using all cores crashed my desktop python. Took >28h to run so just stopped it
+Other ml*.py scripts: All these, including ml_run_mqe_d.py are draft ml scripts,
+just to test things and see scores (some of them are in test_runs folder)
+sep_labels_ml .py: Takes in dataset with 16 class labels, and separates it into
+16 individual datasets with one class label. Takes in ml_16_labels.txt.

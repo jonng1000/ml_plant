@@ -1,0 +1,32 @@
+Folders
+output_interpro: ml scores when interpro computational GO terms
+are used to predict experimental GO class targets
+output_tair: ml scores when tair computational GO terms
+are used to predict experimental GO class targets
+
+Files
+class_labels_go.txt: GO class targets for ml
+combined_scores.txt: combined scores from different feature sets
+GO_counts.txt: GO terms with genes associated with each one, along
+with gene counts per term
+go_targets_dataset.txt: experimental GO class targets from tair,
+for ml
+go_features_interpro.txt: GO features from interpro, for ml
+go.obo: GO database
+boxplot_scores.png, boxplot_interpro_scores.png, ml scores when tair and interpro
+computational GO terms are used as features, respectively
+boxplot_compare_scores.png: compare scores from different feature sets
+
+Scripts
+create_go_features_interpro.py: create interpro computational GO features
+go_labels.py: 
+go_terms_counter.py: counts number of genes in each GO terms, both computational
+and experimental
+plot_boxplot_scores.py: visualises distributions of oob F1 scores of all GO classes
+combine_scores.py: combine scores from different feature sets, put into one dataframe for
+easy plotting
+plot_combined_box_scores.py: plot boxplot to compare scores from different feature sets
+
+Misc
+go_dataset.txt: renamed as go_targets_dataset.txt, this is the GO features file originally
+built with experimental GO terms, but in this workflow, they will be used as class targets

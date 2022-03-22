@@ -1,0 +1,44 @@
+Folders
+testing_dls: testing models downloaded from web database
+output_fi: latest fi files for web database
+output_fi.zip: zipped version of the above
+network: network files for web database
+
+Files
+spearman_values.txt: spearman values to show feature rank score (FRS) in web database
+single_letter_aa_lookup.txt: amino acid lookup table to help in creating good feature info
+for web dev
+selected_features.txt: feature values which are used to calculate FRS in network
+ptm_lookup.txt: protein ptm lookup table to help in creating good feature info
+for web dev
+partial.txt, partial_stage1.txt, processed_stage2.txt, processed_stage3.txt, processed_stage4.txt:
+these files correspond to various stages of changing feature info, to create good feature info
+for web dev, look at related scripts for more info 
+pfam_desc.txt: pfam domain info to help in creating good feature info
+for web dev
+DGE_names_status.txt, DGE_names_status_edited.txt: DGE info to help in creating good feature info
+for web dev, _edited.txt is the updated file
+summariseData.json: global feature info table
+overallData.json: summary of global feature info table, for web database homepage
+
+Scripts
+summarise_json.py: creates small table in json format for web database frontpage
+process_partial.py, process_stageII.py, process_stageIV.py: scripts to process feature info, to
+help in creating good feature info for web dev, this corresponds to
+partial* and processed* txt files
+- no stage III but its fine, check notes section below
+process_stages_json.py: from script to finishes processing feature info, converts to table in
+json format for upload to web database
+prep_feature_effects.py: preprocess feature values for FRS calculation in network
+modify_fi_files.py: modifies *fi.txt files for upload to web database
+get_pfam_desc.py: create pfam description file for giving good feature info for web database
+feature_effects.py: calculate FRS for network, *draft.py is outdated
+exploring_frs.py: exploring the results of the FRS calculations
+
+Notes:
+SK means Swee Kwang, my web development intern
+partial1.txt: manually removed " using Notepad++
+processed_stage2.txt --changed to--> processed_stage3.txt: manually added go_GO_ 
+(replacing GO:) and dge_ prefixes to GO and DGE features respectively, using Notepad++;
+initially used excel to do this but then ran into some
+overallData.json: manually corrected typo in hom_Ginkbiloba -> changed to hom_Ginkgo_biloba

@@ -1,0 +1,30 @@
+Scripts
+- build_RF_score_v3.py: takes *_feature.txt files and generates
+*_build_s.txt files, imports rfe_module_v2.py, which is located in
+D:\GoogleDrive\machine_learning\RF_PNAS\feature_extract\build_top_features
+- rf_feature_extract_v2.py: generates *_scores.txt and
+*_feature.txt files)
+- fully_proc_edit.py: takes partially processed file and generates a
+fully processed file for ml
+- GO_check.py and GO_overlaps.py: for basic data exploration and
+sanity check
+- test_build_RF_score.py: testing script, can ignore
+
+Files
+*_GO.txt files: fully_processed_edited.txt (ml data file from
+fully_proc_edit.py), split into 16 files, separated according
+to GO class
+classes_counts.txt: output from GO_overlaps.py, counts genes in
+each of the binary class, and their intersection. Pos only means genes that
+are only in the positive class. Neg only means genes that are only in the
+negative class. Negative class refers to genes with any other label that is
+not the positive one, hence there are overlaps in gene sets between positive
+and negative classes.
+records.txt: output from GO_check.py, counts genes in
+each of the binary class
+
+Folders:
+results: results from scripts here
+suba_work: results from scripts, where ml data used suba predictions
+in my ml workflow, to see if my workflow can accurately identify
+suba predictions as important features. It can't tho

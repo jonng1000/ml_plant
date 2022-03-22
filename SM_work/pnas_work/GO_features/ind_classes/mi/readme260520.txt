@@ -1,0 +1,50 @@
+Folders
+top200: top 200 features as determined by mutual information (mi)
+ran200: 200 randomly selected featrues
+
+Files:
+mi_golgi_pairwise.txt: Supposed to show mi of pairwise comparison of all features
+Golgi_apparatus_GO.txt: dataset used for pairwise mi calculation of features
+
+Scripts:
+mutual_info_pairwise.py: script used for pairwise mi calculation of all features
+
+Notes:
+Error when running mutual_info_pairwise.py, error is below with relevant context:
+
+>>> feature
+'Amino acid length'
+>>> feature in set_discrete
+True
+>>>  man_discrete_mi_array =  mutual_info_classif(man_discrete_df, y,
+  File "<stdin>", line 1
+    man_discrete_mi_array =  mutual_info_classif(man_discrete_df, y,
+    ^
+IndentationError: unexpected indent
+>>> man_discrete_mi_array =  mutual_info_classif(man_discrete_df, y, discrete_features=True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/jonng/anaconda3/lib/python3.7/site-packages/sklearn/feature_selection/_mutual_info.py", line 449, in mutual_info_classif
+    check_classification_targets(y)
+  File "/home/jonng/anaconda3/lib/python3.7/site-packages/sklearn/utils/multiclass.py", line 169, in check_classification_targets
+    raise ValueError("Unknown label type: %r" % y_type)
+ValueError: Unknown label type: 'continuous'
+>>> y
+Gene
+AT1G01040    1910.0
+AT1G01050     212.0
+AT1G01090     428.0
+AT1G01120     528.0
+AT1G01200     237.0
+              ...
+ATMG00070     437.5
+ATMG00510     437.5
+ATMG00516     437.5
+ATMG01080     437.5
+ATMG01120     437.5
+Name: Amino acid length, Length: 2586, dtype: float64
+
+Error exists because my target vector y, "Amino acid length" has floats, but mutual_info_classif
+expects only ints as it expects discrete variables. "Amino acid length" is discrete but it has floats
+since I imputed median values on missing values and median for this number is a float. Should I change
+such floats to int next time? Not sure, but can kiv this since its not important. 

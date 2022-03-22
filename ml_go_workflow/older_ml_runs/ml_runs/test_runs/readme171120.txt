@@ -1,0 +1,3 @@
+learning curve shows high train and low validation score, overfitting
+need more samples/features
+f1 score ard 0.65 for train set (code doesnt have this, but can be easily set)

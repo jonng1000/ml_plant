@@ -1,0 +1,26 @@
+Folders
+ind_features:
+pictures showing feature importances of top 50 most important features for each GO class
+
+output files:
+- *_build_s.txt: model scores when it is being iteratively built by blocks
+of features
+- *_feature.txt: feature importance values, 100 runs
+- *_scores.txt: model scores, full feature set, 100 runs
+These files are obtained from my workstation account, in
+~/ml_GO_classes/output_files
+
+test_nucleus:
+results of repeating my workflow here for nucleus only, to see if weird nucleus results
+repeats. It did.
+
+scripts (explore_build_s.py, explore_features.py, explore_scores.py):
+these are used to generate the .png pictures here, and in ind_features folder,
+from files in output_files folder
+- all_build_s.png: picture derived from *_build_s.txt files
+- builds_s1000.png: picture derived from *_build_s.txt files, top 1000 features
+- all_feat_i.png: picture derived from *_feature.txt files, all features
+- feat1000_i.png: picture derived from *_feature.txt files, top 1000 features
+- all_scores.png: picture derived from *_scores.txt files
+
+test.png: test picture, can ignore

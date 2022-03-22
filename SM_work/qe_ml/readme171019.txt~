@@ -1,0 +1,6 @@
+building_pnas_dataset_JN -> outdated, this is used to rebuild the pnas dataset, but its not
+needed
+other_info_targets -> downloaded info for targets, not that extensively used, probably
+only ATH_GO_GOSLIM.txt in that is used
+features -> building my features for ML
+getting_targets -> my targets for ML

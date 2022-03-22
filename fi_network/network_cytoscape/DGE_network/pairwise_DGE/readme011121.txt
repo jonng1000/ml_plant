@@ -1,0 +1,8 @@
+Files
+*.ai: illustrator files to make DGE network pics for publication, can guess what each file is, based
+on its name and content
+*.svg: svg pics from cytoscape, to make DGE network pics for publication, can guess what each 
+file is, based on its name and content
+*.jpg: .jpg pics, exported from their corresponding .ai files, to put into google doc for paper
+DGE_pairwise_*.cys: pairwise DGE network analysis, for growth, infection, light and stress 
+categories (abbreviated their names)

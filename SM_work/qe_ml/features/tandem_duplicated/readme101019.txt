@@ -1,0 +1,14 @@
+identifies no labelled (genes that are not labelled with GM and SM labels), 
+GM, and SM genes that are tandemly duplicated.
+
+genes_tandem_dup.csv is the file which has the tandem duplication feature (0/1), which
+is used for ML.
+
+10 000 permutations takes abt 4min
+
+(20/11/19)
+p-values for nl genes missing from permutation test script,
+hence added here, manually added this to .csv file with all this info as well:
+no_labeled p-value 0.0 no_labeled avg 0.08949479138678729
+also added code to produce it in script, can do this without rerunning script since the
+ans isnt likely to vary much

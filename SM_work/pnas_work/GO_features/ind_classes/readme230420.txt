@@ -1,0 +1,62 @@
+Folders
+making_dataset: contains files (d*s*.txt) which are copied from the PNAS supp data,
+and processed by building_dataset_edit2.py (produces dataset_all.txt),
+preprocessing.py (produces preprocessed_data.txt) and proc_suba.py
+(produces processed_suba.txt), in this order, to create a processed data set with
+suba predictions, and missing values filled in. This processed data set,
+processed_suba.txt, can be used for machine learning.
+
+GO_datasets: gene GO classes from GO_check_v2.py, only Golgi_apparatus_GO.txt
+and nucleus_GO.txt are used for downstream work conducted in this folder.
+Contains GO_check_v2.py, which takes processed_suba.txt and splits it into
+different smaller data sets according to a set of GO classes
+(from Marek's selections). processed_suba.txt was copied to be in the
+same folder as this script, then deleted after the script was run
+
+Ouput:
+This folder contains the output from my random forest
+workflow, when it is used on 2 GO classes,
+Golgi and nucleus. My workflow consists of:
+1) Creating raw dataset from PNAS supp data, which
+is found in making_dataset folder.
+2) Preprocesing it to make it suitable for machine
+learning, also found in making_dataset folder.
+Preprocessed data is split into the desired
+GO classes, which are found in the GO_datasets
+folder.
+Output from step 3 onwards, are found in the
+output folder
+3) Randomly selection 1000 features 5 times, from
+each GO class. This results in 10 datasets.
+4) Run  rf_feature_extract_v3_p.py, which requires
+rfe_module_v3.py, on the 10 datasets. This generates
+model scores, permutation importace and feature
+importance. Feature importance not strictly needed
+but calculated just in case they are.
+5) Run build_RF_perm_f1000.py using output from
+step 4 above, to build model using features in
+batches, and score models.
+Steps 4-5 above are run using workstation
+6) Scores and importance of features calculated
+by the different ways here, are used by my plotting 
+scripts, explore_scores.py, explore_perm_v2.py, 
+explore_perm_all_v2.py and explore_build_s_v2.py,
+to create plots for viewing.
+
+Further notes on scripts in the Output folder
+rf_feature_extract_v3_p.py: Creates random forest model, scores model,
+and calculates permuation and feature importance. Based on
+f_feature_extract_v3_1.py but changed name to have _p.py to make it
+more obvious that it caculates permutation importance. Hence from now
+on, f_feature_extract_v3_1.py is outdated. Don't use this
+
+rfe_module_v3.py: contains functions for my random forest model, used
+by explore_perm_v2.py
+
+ran_feature_sel.py: randomly selects X features Y times from a dataset,
+outputs Y smaller datasets
+
+build_RF_perm_f1000.py: builds random forest model batch by batch,
+for 1000 features, and scores them during the building process
+
+explore_*.py scripts: used for plotting

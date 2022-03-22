@@ -1,0 +1,27 @@
+Scripts
+plot_all_edge_counts.py: plots histogram of features by number of edges from diff feature categories
+plot_edge_counts.py: plots histogram of DGE features by number of edges from diff DGE expt, also
+sorts number of DGE edges for each DGE feature, number of edges divided into different categories
+count_all_edges.py: counts and sorts number of edges for each feature, number of edges divided into
+different categories
+count_dge_edges.py: counts number of DGE edges for each DGE feature, number of edges divided into
+different categories
+
+Files
+all_edge_counts.pdf: histogram of features with counts of edges (different feature category)
+dge_edge_counts.pdf: histogram of DGE features with counts of DGE edges (different expt)
+overall_edges.csv: all edges info, from overall_view.cys in
+D:\GoogleDrive\machine_learning\fi_network\network_cytoscape\overall_network
+DGE_names_status.txt: input to count_dge_edges.py
+dge_nodes_edge_counts.txt: output from count_dge_edges.py
+edited_cytoscape_labels.txt: input to count_dge_edges.py
+new_names.txt: input to count_all_edges.py, from 
+D:\GoogleDrive\machine_learning\fi_network\network_cytoscape\overall_network\for_marek
+sorted_all_nodes_counts.txt: output from count_all_edges.py
+sorted_dge_nodes_edges.txt: output from plot_edge_counts.py
+
+
+
+
+
+

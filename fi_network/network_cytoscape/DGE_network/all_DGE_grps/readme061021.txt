@@ -1,0 +1,24 @@
+Scripts
+adding_info_DGE.py: annotates DGE expts, whether they are from the same category and/or 
+expt or not 
+edit_DGE_names.py: modify DGE expt names by indicating whether it has up or down regulated genes
+
+Files
+*.ai: illustrator files to make DGE network pics for publication, can guess what each file is, based
+on its name and content
+*.svg: svg pics from cytoscape, to make DGE network pics for publication, can guess what each 
+file is, based on its name and content
+*.jpg: .jpg pics, exported from their corresponding .ai files, to put into google doc for paper
+5_DGE_groups.cys: looking at 5 DGE grps
+DGE_top10.cys: top 10 nodes, DGE
+cytohubba_output_dge.csv: cytohubba file, to help in processing DGE cytoscape files
+dge_5.graphml(1)_default edge.csv: to help in processing DGE cytoscape files, outdatted
+dge_5.graphml default edge.csv: updated version of dge_5.graphml(1)_default edge.csv,
+use this
+DGE_edges_cytoscape.csv: edges info, used in adding_info_DGE.py
+dge_network_node.csv: nodes info, used in adding_info_DGE.py
+dge_top10_deg.csv: top 10 node, to help in processing DGE cytoscape files
+DGE_category_specific_expt.txt: used in edit_DGE_names.py
+DGE_names_status.txt: output of edit_DGE_names.py
+edited_cytoscape_labels.txt: from adding_info_DGE.py, used to annotate DGE experiments,
+whether they are from the same expt/category or not

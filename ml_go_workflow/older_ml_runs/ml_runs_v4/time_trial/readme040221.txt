@@ -1,0 +1,13 @@
+Folders
+results: results from time trial ml scripts
+
+Files
+*.svg: plots of scores
+time_cel_loc.xlsx: excel file i created to manually calculate time taken for each ml model used
+class_targets_go.txt: list of 16 GO terms (marek selected them)
+time_cel_loc.txt: from time_cel_loc.xlsx, to calculate time taken for each ml model using a
+script
+
+Scripts
+plots_cell_loc_scores.py: make plots from time trial results
+time_analysis.py: script to analysis time taken for ml models

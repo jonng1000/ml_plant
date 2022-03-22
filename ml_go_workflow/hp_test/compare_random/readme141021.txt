@@ -1,0 +1,37 @@
+Folders
+output_ran: output from ml workflow, comparing real data with randomised data
+output_ran100: output from ml workflow, comparing real data with randomised data, shuffled 100 times
+output_ran100_add: output from ml workflow, comparing real data with randomised data, 
+shuffled 100 times, 4 GO classes here since workflow didnt run these, not sure why, so reran my
+workflow on these classes again
+outdated_pics: outdated pics so can ignore
+- line_71_compare_ran.png: line plot showing the scores
+from ml workflow
+- line_71_compare_shuffed_l.pdf: line plot, not randomised
+- line_71_compare_shuffed_o.pdf: line plot, compared original with shuffled 100 times, CI set as
+band
+- line_71_compare_shuffed_s.pdf: line plot, shuffled 100 times, CI set as bars
+- line_71_compare_shuffed_s_box.pdf: box plot, shuffled 100 times
+- line_71_compare_shuffed_t.pdf: plot, compared original with shuffled 100 times, testing
+
+Files
+line_71_compare_shuffed.pdf, line_71_compare_shuffed.ai: plot, compared original with shuffled 
+100 times, .ai with _v2 prefix is for updated version
+line_71_compare_shuffled.jpg: comparison plot for publication, _v2 prefix is for updated version
+line_71_compare_ran.svg: line plot showing the scores
+from ml workflow (outdated)
+ml_dataset_dc.txt: ml dataset
+ct_go_hp_linux.txt, ct_go_hp_linux_add.txt: GO classes as targets, for testing my workflow
+GO_term_desc_shuffled.txt: complete list of GO terms with full description, for supp data in paper
+GO_desc_shuffled_pub.xlsx: excel version of GO_term_desc_shuffled.txt, to help in publication
+
+Scripts
+plot_line_compare_ran.py: plots line plot showing the scores
+from ml workflow
+plot_compare_shuffled.py: compared original scores with shuffled 
+100 times, for publication
+test_random.py: random shuffling test script
+check_runs.py: checking whether all GO classes have been tested by my workflow
+
+
+

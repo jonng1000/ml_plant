@@ -1,0 +1,7 @@
+overall_marek.cys: overall network but with DGE edges colouring scheme in another network, 
+just for marek (but i realised i also used this for some downstream work since its 
+nodes naming scheme is improved)
+orginal_node_names.csv: cytoscape original node info
+adding_names.py: adding names to nodes, to make cytoscape file for marek easier to read
+GO_info_network.txt: GO info, to add names to nodes
+new_names.txt: files to rename GO nodes

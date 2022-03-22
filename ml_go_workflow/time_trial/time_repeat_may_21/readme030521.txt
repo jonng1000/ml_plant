@@ -1,0 +1,22 @@
+Folders
+
+Files
+*.svg, *.png: pics of time taken
+- if file contains 'all_time': combined GO classes
+- if file contains 'go_class': separated GO classes
+go_class_time_pub.png: time taken for separate GO classes, with error bar,
+for publication
+*_scores.txt: output files from ml workflow done on chuck norris
+*_scores_mod.txt: manual modification of *_scores.txt, to add in some info to make plotting
+easier
+- added info is basically to show if models converge or not
+marek_time.xlsx: file which marek is using to calculate time taken
+for diff numbers of cores
+time_repeat_update300421.pptx: my notes on results, conclusions, plan for future work
+selected.txt: data showing time taken for different models
+time_repeat_update300421.pptx: shows my results and conclusions from this work
+
+Scripts
+time_repeat_analysis.py: analyse results from ml workflow, plots results
+time_repeat_analysis_pub.py: same as above, but modifed to have error bars,
+for publication

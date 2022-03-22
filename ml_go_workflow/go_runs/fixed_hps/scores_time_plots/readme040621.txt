@@ -1,0 +1,20 @@
+Files
+cores_time.png: shows time taken when number of cores are varied
+oob_acc.png, oob_f1.png: shows scores
+scatterplot.png, scatterplot_line.png: shows the relationship between GO
+class size and model score, _line suffix means GO class size is log transformed
+jointplot_scatter.png, jointplot_scatter_line.png: Same as scatterplot.png and
+scatterplot_line.png, but is a joint plot as it shows a histogram. 
+_line suffix means GO class size is log transformed
+jointplot_scatter_line.svg: .svg version of the .png pic, for publication
+
+
+Scripts
+plot_time.py: plots time taken when number of cores is varied
+plots_go_scores_oobf1.py: plots model scores, but is outdated
+plots_go_scores_oob.py: plots model scores, updated, from
+plots_go_scores_oobf1.py
+scatterplot_scores_oob.py: plots scatterplot showing relationship
+between GO class size and model score
+jointplot_scatter.py: same as scatterplot_scores_oob.py, but plots jointplot, with
+scatterplot and histogram to show relationship between GO class size and model score

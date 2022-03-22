@@ -1,0 +1,41 @@
+PNAS dataset has many missing values:
+- Missing continous features can be filled by median and be represented by float64
+- Missing binary features can't be represented by int64, should use pandas nullable dataype,
+Int64 next time
+- Missing categorical features cannot be handled by sklearn one hot encoding, so used pandas
+get_dummies() method, so they will be represented by all 0s.
+- Missing binary features are treated as categorical features, filled by 0
+
+For those reasons above, did the below method:
+- dtypes_partial_proc.py partially processes pnas data set by converting to correct datatypes,
+fills missing binary and continous features, but leaves missing categorical features (since I
+can't cast to int64 datatype and fill in missing values) and class
+labels alone
+- fully_proc.py takes output from dtypes_partial_proc.py. removes unwanted class labels,
+creates dummy variables (one hot encoding), produces file which can be directly used for machine
+learning
+- rf_pnas.py takes fully processed dataset from fully_proc.py and does rf on it.
+- rf_pnas_v2.py same as rf_pnas.py  but test size is a variable
+- rf_pnas_lc.py does similar work as rf_pnas, but plots learning curve
+- rf_pnas_bug.py does same work as rf_pnas.py, but expresses code as functions to try and
+improve it, results seem unaturally good, so there's some error here, ignore it. 
+Error identified on 190220 in the split_test_train func, and corrected in another script.
+- explore_scores.py: plots boxplot of f1, precision and recall scores of rf model
+
+Outputs
+- rf_scores.txt: f1, precision and recall scores from running RF model 100 times
+- partial_processed.xt: output from dtypes_partial_proc.py
+- rf_scores_1.txt, rf_scores_2.txt: same as rf_scores.txt but *_1.txt has 25% test size
+while *_2.txt has 25% test size and 50 runs
+- fully_processed.txt: output from fully_proc.py
+- dtypes_edited.txt: some outdated file, can ignore
+- cat_features.txt: list of categorical features, used to identify what they are in fully_processed.py
+- boxplot_rf_scores.png: boxplot from boxplot_rf_scores.png
+- boxplot_rf_scores_1.png, boxplot_rf_scores_2.png: same as boxplot_rf_scores.png but *_1.png
+has 25% test size while *_2.png has 25% test size and 50 runs
+- learning_curve_pics.docx: learning curve pictures
+- feature_impt_pics.docx: shows graph of feature importance, but probably slightly incorrect since i
+used RFE with a step size of 100, which is too big
+
+Folders
+- feature_extract: contains work for feature extraction

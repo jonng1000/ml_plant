@@ -1,0 +1,20 @@
+Folders
+output: results from ml workflow, contains feature importance, hp results,
+scores and pickled models
+
+Files
+score_grps_box.png, score_grps_box_out.png, combined_boxplot.png: boxplots, produced by 
+visualise_boxplot_scores.py, _out suffix means that plot has outliers
+high_hist.png, not_high_hist.png, combined_hist.png: histograms of all GO scores, produced by 
+visualise_hist_scores.py
+log_110621.txt: log file from ml run
+log_110621_summary.txt: manually created this, removed expected error messages
+log_110621_summary_blanks.txt: manually modified this, to use in script which checks for
+unexpected error messages
+
+Scripts
+parse_log_summary.py: checks log file for errors
+visualise_boxplot_scores.py: visualises distributions of oob F1 scores of all GO classes,
+those which scored well and those which did not.
+visualise_hist_scores.py: visualises distributions of oob F1 scores of all GO classes, those which
+scored well and those which did not.

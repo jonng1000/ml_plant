@@ -1,0 +1,14 @@
+This folder contains my scripts to generate several of my features, reran
+these scripts as some of them needed editing for an improved ml workflow
+
+Does not use NA to represent missing values when writing to text files
+
+process_ath_spm.py, process_ath_td.py, process_ath_tpm.py does not need to be edited
+
+To find out what each script does, open them and read the comments there
+
+Folders
+oudated: contains outdated orthogroup, phylogenetic, tpm, spm info from irene, used last yr, 
+but she updated this, so now i am using updated versions of this (updated at 240321)
+- tpm and spm, she now has 9 organs (meristem is split into 2), prev she has 8 (meristem is one)
+dask-worker-space: some dask thingy, can ignore

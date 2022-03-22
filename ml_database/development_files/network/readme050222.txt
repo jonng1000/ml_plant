@@ -1,0 +1,42 @@
+Folders
+logs, output: random folders creating when I was testing various cytoscape related software,
+not important
+
+Files
+overall.graphml.cyjs: overall network, for sk in some format which he can parse easily
+- overall2.cyjs: updated version of this
+complete_sk.cys: overall cytoscape network for sk, has overall and dge info inside, this is the most
+updated version so use this, probably used to make the above cyjs files
+overall_sk.graphml, overall_sk2.graphml: network in graphml format, the file with 2 is the updated
+one, used to make complete_sk.cys
+overallData.json: feature info from overall_sk.graphml, but this is outdated
+styles.json: styles file in json format for sk (outdated, dont use)
+- styles2.json is the updated one
+dge_5.graphml default edge.csv: supplies dge style info to cytoscape, from
+G:\My Drive\machine_learning\fi_network\network_cytoscape\DGE_network\all_DGE_grps
+orig_nodes_network.csv: original node names from network
+typo_nodes_network.csv: used to help correct typos in orig_nodes_network.csv
+corrected_typos_pre.txt: corrected many typos in feature names, where spaces was accidentally
+replaced with _ a long time ago
+corrected_typos_pre.xlsx: used Excel to check typo correction, and to correct typos in the new_name
+column by merging both the old version of it, and the corrected version of the name column
+- Initially created a txt file from this to manually removed " using Notepad++,
+and corrected typo in description column for dge_E-GEOD-54680_4_up and
+dge_E-GEOD-54680_5_down features. This typo is prob due to Excel modifying my values
+- However for some strange reason, Cytoscape can't read the txt file but can read the Excel file,
+hence just imported the Excel file into Cytoscape and corrected the DGE feature there
+- corrected_typos_db.txt is the Excel file exported to .txt format for backend
+my_features_180122_explore.xlsx: used to help me get feature info in assigning good feature names
+for web database
+partial.xlsx, processed_stage3.xlsx: files probably used to help create good feature names
+for web database, but probably not used as they are superceded by their related files in the
+G:\My Drive\machine_learning\ml_database\development_files
+ranking_calculations.xlsx: used to discuss with Marek FRS calculations
+
+Scripts
+cyto_parser.py: exploring some cytoscape related tools
+edit_node_typos.py: editing typos in nodes
+get_network_nodes.py: original script to identify first neighbours of a node in the network
+- *repo.py: an outdated repo version of this
+
+

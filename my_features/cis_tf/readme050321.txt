@@ -1,0 +1,10 @@
+Folders
+AtcisDB: AtcisDB files downloaded from its online database, only BindingSite.tbl is used
+
+Files
+cis_features.txt: cis regulatory element features used for ml
+test_cis.tbl: test file just for testing script
+
+Scripts
+process_cis.py: creates cis element features for ml, takes in ./AtcisDB/BindingSite.tbl and
+produces cis_features.txt

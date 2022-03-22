@@ -1,0 +1,16 @@
+Folders
+proteomes_EvoRepro: Irene's EvoRepro files, from her paper (in peer review)
+outdated: Outdated data and scripts
+Files
+Supplemental_Data_set_3_modified.xls: Modified from
+TPC2015-00051-LSBR3_Supplemental_Data_set_3.xls, used to help make ml features
+Supplemental_Data_set_3_modified.txt: from .xls version above, used as input to make features
+TPC2015-00051-LSBR3_Supplemental_Data_set_3.xls: downloaded raw info from Lloyd, et al. 2015
+paper, for ml feature creation
+Orthogroups.txt: Irene orthogroups data, from EvoRepro, for ml feature creation
+Orthogroups_test.txt: test data set to make sure my script works
+
+Scripts
+ath_homolog.py: creates homology features from Irene's EvoRepro data
+lloyd_features.py: takes in Supplemental_Data_set_3_modified.txt, and outputs
+lloyd_features.txt, which are my ml features

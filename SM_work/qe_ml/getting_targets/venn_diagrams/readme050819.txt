@@ -1,0 +1,6 @@
+these scripts are for producing .csv files for making venn diagrams.
+URL for venn diagrams is http://www.interactivenn.net/
+
+input files are in the parent folder, these are
+Ara_GO_targets.csv
+d1s1_short.txt

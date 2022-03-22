@@ -1,0 +1,2 @@
+These plots and script are outdated, using them to play around with data before a more
+serious analysis.

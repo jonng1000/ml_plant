@@ -1,0 +1,17 @@
+Folders
+fi_network: feature importance network to identify important features
+ml_database: ml database info
+ml_experimental_work: ml work involving computationally assigned GO terms, Marek didn't
+want me to do this, but I just wanted to try
+ml_go_workflow: work done on building and running my ml workflow on GO term
+prediction
+my_features: work done when i am building my own features
+SM_work: ML work on SM
+GO_labels: getting GO class labels. Used for pnas and my data
+ml_dev_network_pics: pictures for ml paper, pics are from ml time, development, score and
+network work, this folder contains pics which doesnt fit nicely into the other folders here
+database_repo: to work locally with the online database's repo
+
+Files
+my_features_GO_prediction.gsheet: google sheet on all my ml features - updated
+my_features_GO_prediction_280321.xlsx: Saved past version of the above google sheet

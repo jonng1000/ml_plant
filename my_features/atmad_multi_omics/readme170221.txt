@@ -1,0 +1,19 @@
+Folders
+outdated: scripts and files which were used to create features which I no longer need, 
+so can ignore
+
+Files
+gwas.csv, twas.csv: data from AtMAD
+gwas_edited.txt: edited from gwas.csv, order of columns is slightly wrong (phenotype desc
+is wrong), so had to swap some of their positions. Can cross check with AtMAD website which
+has the correct ordering
+twas_edited.txt: edited from twas.csv, similar error to gwas.csv, order of columns is wrong
+so corrected it here
+twas_edited_test.txt, gwas_edited_test.txt: smaller files based on the original files above,
+used to verify that my scripts to process them works
+twas_features.txt, gwas_features.txt: features file for ml, processed by my scripts using
+their respective *_edited.txt files above
+
+Scripts
+process_twas.py, process_gwas.py: process their respective twas and gwas files, to make their
+respective *_features.txt for ml

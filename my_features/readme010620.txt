@@ -1,0 +1,69 @@
+Folders
+aranet: functional gene network features
+
+atmad_multi_omics: multiomics features, basically, correlates genes to phenotypes, from
+atmad database
+
+biochemical: biochemical features file
+
+cis_tf: cis regulatory elements features, from AtcisDB database
+
+coexp_network: gene coexp features
+
+data_creation_v3: details in the folder itself, updated version of features based on
+data_creation folder in the outdated folder
+
+go_terms_features: GO terms as features
+
+interpro_files: Contains input fasta files for interproscan
+and scripts to preprocess data for interproscan. Contains
+the following files and scripts.
+- Athaliana_447_Araport11.cds_primaryTranscriptOnly.fa.gz:
+cds file downloaded from JGI Phytozome, don't actually need
+this
+- Athaliana_447_Araport11.protein_primaryTranscriptOnly.fa.gz:
+raw fasta file downloaded from JGI Phytozome
+- Athaliana_447_Araport11.protein_primaryTranscriptOnly.fa:
+unzipped file from the above
+- ath_aa_processed.fa: preprocessed fasta file for interproscan
+- process_fasta.py: preprocesses raw, unzipped protein fasta file
+above
+- ath_aa_processed.fa.tsv: interproscan output from preprocessed
+fasta file
+
+kal_sleuth_work:
+Has my work involving kallisto and sleuth to get dge data,
+further notes are in the readme in this folder
+
+pnas_add: Additional features from the PNAS paper, leftover after all features in this
+folder have been created
+
+ppi_networks: work done on ppi networks, see folder readme for
+details
+
+protein_ptm: PTM features
+
+tf_tg_coexp: transcription factr-target gene (TF-TG) regulatory network features
+
+outdated:
+outdated feature files, not used now
+
+Scripts
+get_interpro_counts.py: Explores interpro results. Takes in
+ath_aa_processed.fa.tsv
+
+Files
+
+Notes
+Making binary features from protein domains:
+Protein domains are tagged with PD for easy reference in future
+
+Gene expression features are tagged with GE for easy reference in
+future (outdated as of ard Sep-Nov 2020 onwards)
+
+If I am running any of my scripts again, may need to change file paths since I have changed the
+organisation of the files, scripts and folders here
+
+Before 210920, typically I copy my finished scripts from the workstation to my desktop, but from
+now on, I've stopped it since my workstation has too many scripts to move over, so now, my
+desktop and workstation can have different scripts.

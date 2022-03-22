@@ -1,0 +1,57 @@
+Folders
+all_data: all my features, copied from their respective folders
+figures: contains plots from model scores
+labels_16_data: contains 16 cellular location datasets, for ml training
+labels_16_data_ran: same as labels_16_data, but with randomly shuffled feature
+values
+results: contains results from running my ml workflow, used to make plots in
+figures folder
+results_ran: same as results folder, but data used would be those with randomly shuffled feature
+values
+test_env: test environment to test various things, files and folders here would be
+loosely similar to ml_runs_v2 contents
+
+Files
+feature_type.txt: Shows which features are categorical and continuous, based on
+their prefix
+ml_dataset.txt: All features in one file, produced from assemble_ml_data.py
+ml_data_label.txt: All features and one class label in one file, used for ml.
+Produced from label_ml_data.py
+ml_16_labels.txt: Produced from all_labels_ml.py
+ml_16l_edited.txt: Downcasted form of ml_16_labels.txt, used for ml workflow
+ml_data_label_scores.txt: ml scores, produced by running ml*.py scripts
+small_test.txt: Small dataset for testing
+top20_fi_ran.txt: top 20 features, when feature values are randomised
+cell_loc_clusters.txt: input file for permuation test, used in perm_t_wrap.sh
+perm_test_results.xlsx: record and notes for perm test results
+
+Scripts
+assemble_ml_data.py: Assembles all features into one file for downstream ml work.
+Takes in all files from all_data folder, and produces ml_dataset.txt
+all_labels_ml.py: Labels my ml dataset with all 16 class labels, 
+takes in ml_dataset.txt and produces ml_data_labels.txt
+create_small_set.py: Creates a small dataset from the original ml dataset, for
+rapid testing purposes
+downcast_ml.py: Downcasts data type in ml dataset to save memory, takes in
+ml_16_labels.txt and produces ml_16l_edited.txt
+plots_c16_v3.py: Improved version of plots_c16_v2.py, used for 2TAC presentation
+plots_c16_v2.py: Improved version of plots_c16.py
+plots_c16.py: Takes in scores from results folder and visualises it
+plots_fi.py: Takes in feature importances from results folder and visualises it
+sep_labels_ml .py: Takes in dataset with 16 class labels, and separates it into
+16 individual datasets with one class label. Takes in ml_16l_edited.txt.
+test_downcast.py: Testing downcast process
+perm_t_wrap.sh: Wrapper script for permutation test, takes in cell_loc_clusters.txt
+perm_test_gc.py: Permutation test
+ran_fi_t20_v2.py: Get mean feature importances for all 16 cellular locations and 
+selects top 20 from them
+plots_ran_fi_v2.py: Plots feature importances for all 16 cellular locations, when feature
+values are randomised
+plot_fi.py_v3.py: Plots feature importance, improved version of plot_fi_v2.py, used
+for 2TAC presentation
+plot_fi.py_v2a.py: Plots feature importance, for testing purpose, not used
+plot_fi.py_v2.py: Plots feature importance, improved version of plot_fi.py
+plot_fi.py: Plots feature importance
+plots_fi_line.py: Plots feature importances for all 16 cellular locations and draws 
+a line corresponding to the feature importances from randomised feature values. Not
+used

@@ -1,0 +1,22 @@
+Folders
+results: results from hyperparameter (hp) tests, from cn
+
+Files
+*.svg: plots showing results
+- high.svg: plots with GO terms with high scores
+- med.svg: plots with GO terms with med scores
+- low.svg: plots with GO terms with high scores
+- those plots with _diff: plots same thing, but counts each set of parameters as one group
+- scores_oob.svg: oob score
+all_hp_counts.txt: output from analyse_hp.py
+- with _diff: is same thing, but counts each set of parameters as one group
+hp20_update_100321.pptx:update for marek
+scores_oob_f1.png, scores_oob_acc.png: oob f1 and accuracy scores, respectively 
+
+Scripts
+analyse_hp.py: prep hp test results for plotting
+- with _diff: does same thing, but counts each set of parameters as one group
+- analyse_hp_v2.py: corrected version of analyse_hp.py, so use this instead
+plot_hp_counts: plots hp test results, takes in output from analyse_hp.py
+- with _diff: does same thing, but counts each set of parameters as one group
+plots_go_scores_oobf1.py: plots oob scores for each GO term, this includes f1 and accuracy

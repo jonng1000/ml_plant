@@ -1,0 +1,13 @@
+GO_classes16: 16 GO classes using RF ML workflow
+no_pfam: 10 GO classes with suba predictions
+using RF ML workflow, without pfam domains features.
+Scripts used for work in all of its subfolders are in
+this folder.
+
+outdated: 
+contains info which i no longer need so can
+ignore. Contains the below info:
+- suba_classes: 16 GO classes with suba predictions
+using RF ML workflow, does not have pfam domains.
+Not sure what purpos does this folder serve, so placed
+it in the outdated folder

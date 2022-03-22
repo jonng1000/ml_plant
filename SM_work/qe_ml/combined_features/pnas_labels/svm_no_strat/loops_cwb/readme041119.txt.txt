@@ -1,0 +1,15 @@
+Shows results from slf1_cwb.py when grid search set to precision
+- params_matrix.csv are hyperparameters selected from gridsearch
+- params_results.csv are the test and predicted results, along with the predicted probabilities
+- all_scores.csv is the score
+
+For this script, I used balanced class weights to correct for unbalanced classes, then did
+grid search 100 times, then trained model once. But results are very bad, TPR ~ 17%. Strangely,
+I ran it manually twice (2 loops) and I got TPR of about 50%, 
+but this is also bad so will scrap this idea.
+
+Did a second run of this, with 100 loops, but also got very bad TPR of 4%. Note sure why. maybe my
+code has an error? Anyway, will ignore this for now.
+
+Did a third run, with 100 loops of grid search and model building. First 2 runs involved 100 grid
+searches but only 1 model building. Have TPR of 30% so still very bad.

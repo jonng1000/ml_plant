@@ -1,0 +1,10 @@
+Folders
+database_pics: getting pics from web database, for paper
+development_files: files for web dev work
+naming_files_mid2021: files used to create feature names, descriptions and categories, but these
+are outdated so can ignore
+older_files_ref: older files used for web dev work, most are outdated but overallData.json
+and summariseData.json are important for web dev
+
+Files
+Machine learning (ml) database.gdoc: used to keep track of web dev work, but outdated since jan 2021

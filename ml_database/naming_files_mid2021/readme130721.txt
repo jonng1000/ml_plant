@@ -1,0 +1,26 @@
+Files
+*_info.txt: Files showing names describing features for ml database
+- Type columnn is filled with info from feature type column in googe doc
+- Description column is filled with info from feature purpose column in google doc
+- Exceptions:
+Orthogroup size feature: description column is filled with info from feature purpose
+and feature data type columns in google doc
+- Other notes:
+ath_ttr_clusters_info.txt: this is wrong as ttr_cluster_id names are wrongly named,
+should be tti_cluster_id.
+new_ath_ttr_clusters_info.txt: corrected version of ath_ttr_clusters_info.txt above
+
+combined_names.txt: file combining all the names from the *_info.txt files, sent to Swee
+Kwang to upload to his database
+combined_names_v2.txt: corrected version of the above, as tti_cluster_id names have been
+corrected
+
+Scripts
+naming*.py: scripts which create the *_info.txt files, containing names describing features
+for ml database
+combining_files.py: combining all *_info.txt files, to create a file with names decribing
+features
+combining_files_v2.py: corrected version of the above, as tti_cluster_id names have been
+corrected
+
+

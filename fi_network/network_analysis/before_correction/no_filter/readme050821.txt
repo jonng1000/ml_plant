@@ -1,0 +1,23 @@
+Folders
+without_rz: contains work done when mutual rank (MR) calculation is done incorrectly,
+as feature importance values of 0 have not been removed, score distribution is also wrong
+as it combines F1 and R sq scores, which doesn't make sense
+
+Files
+big_fi.png: histogram of feature importance of all features (has feature
+importance values of 0, but this is important)
+nonzero_mr.png: mutual ranks of feature importance values, those with
+0 have been removed
+fi_mr_hist_ylog16b.png: histogram of MR, has 16 bins, has feature importance values of 0
+
+Scripts
+build_fi_network_test.py: script to test code for building feature importance network,
+final script is written and run on CN
+
+Notes
+- some of the work here were done by including feature importance values of 0, but these are
+important hence are included here. Work done by including such values, if they aren't important,
+are shifted to the without_rz folder, which represents oudated work
+
+- pictures would have been drawn by scripts in CN
+

@@ -1,0 +1,23 @@
+Folders
+ipc-1.0: IPC calculator used to calculated pI and mw for proteins, follow readme file for
+instructions
+outdated: Outdated stuff used for testing, no longer needed. Examples: 
+- s4_IPC2_standalone is the IPC2 calculator which I tried to use but it didn't work
+- result.csv, process_pI_mw_outdated.py: from web based IPC2, but doesnt have enough proteins
+which i want; associated script was used to process it
+- UP000006548_3702_all.fasta.pI: pI database file, but doesnt have enough proteins which I want,
+so discarded
+
+Files
+ath_aa_processed.fa: protein fasta file used for IPC
+results_JN.csv: IPC output
+results_JN_test.csv: smaller IPC output, used for testing purposes
+aa_length.txt: protein length file
+ath_pi_mw.txt: pI and mw file
+processed_results.txt: IPC output in tabular form
+
+Scripts
+find_pep_len.py: calculate protein length
+process_pI_mw.py: Takes IPC ouput, and processes it into a tabular form, processed_results.txt
+extract_pI_mw.py: Selects the desired pI and mw value from tabular IPC results, produces
+ath_pi_mw.txt

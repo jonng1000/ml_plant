@@ -1,0 +1,26 @@
+Folders
+perm_test: using the 10 selected GO classes, used permutation importance
+function instead of feature importance function from sklearn, to
+
+determine the important features for my RF workflow
+test1: created raw data set from scratch in Mar '20, from PNAS
+supplementary data, then did RF ml workflow.
+test2: used the raw data set from earlier work done in Jul '19, from PNAS
+supplementary data, then did RF ml workflow.
+
+Purpose of these two tests, is to check that my Jul' 19 creation of
+the raw data set is done correctly. If it is, my workflow resuls should be similar.
+Both test1 and test2 yields consistent results, hence can just use test1 from now on.
+
+Scripts
+build_RF_score_v3.py: build features in blocks, to see how model scores improve
+build_RF_score_v3_1.py: same as build_RF_score_v3.py, except that it uses less features
+build_RF_perm_s.py: (updated script amongst all the other build_RF scripts here)
+same as build_RF_score_v3_1.py, except that it uses permutation importance
+to calculate the importance of features
+rf_feature_extract_v3.py: score model and extract feature importance
+rf_feature_extract_v3_1.py: same as rf_feature_extract_v3.py, except that permutation importance
+is also obtained.
+rfe_module_v2_1.py: based on rfe_module_v2_1.py, only one cpu will be used.
+Normally should use rfe_module_v2_1.py.
+explore_*.py: These scripts are for plotting

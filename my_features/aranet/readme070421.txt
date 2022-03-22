@@ -1,0 +1,14 @@
+Files
+aranet.abc: functional gene network in abc format for mcl
+aranet.graphml: functional gene network in graphml for networkx
+dump.data.mci.I20: mcl clustering output, used to create cluster features
+AraNet.txt: aranet file downloaded from the aranet database, raw data used to generate aranet
+features (functional gene network)
+aranet_centrality_features.txt: aranet centrality features for ml
+ath_agn_clusters.txt: aranet cluster features for ml
+
+Scripts
+centrality_nx.py: From aranet.graphml, calculates degree and inbetweeness centrality measures
+convert_nx_abc_aranet.py: Takes AraNet.txt, and converts to aranet.graphml and aranet.abc
+explore_features.py: Explores functional gene network features
+process_mcl.py: Creates cluster features from mcl output, dump.data.mci.I20

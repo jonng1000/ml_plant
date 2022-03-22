@@ -1,0 +1,26 @@
+Folders
+kallisto: kallisto program file
+kal_worksation_scripts: scripts from workstation used for RNA processing, check
+workstation readme file for more info
+exploring_sleuth_output: explores sleuth output, contains file used for downstream
+ml
+test_environment: for testing kallisto and sleuth programs and output
+sleuth_trial: testing sleuth work, can ignore
+sleuth_marek: sleuth work for marek, but the output doesnt make sense, so can ignore
+grouping_DGEs: grouping DGEs into categories for ml score analysis
+
+Scripts
+explore_seq_list.py: Explores and prepares the list of RNA seq run IDs
+which I got from google docs. Takes in my_features_GO_prediction_edited.tsv
+and produces rna_seq_dl.txt.
+check_rna_kal.py: Explores downloaded processed rna data by kallisto
+
+Files
+my_features_GO_prediction_edited.tsv: RNA-seq data IDs and annotation
+rna_seq_dl.txt: List of RNA-seq run IDs to download programmatically
+Athaliana.idx: index file produced and needed by kallisto
+kallisto_linux-v0.46.1.tar.gz: compressed downloaded kallisto file
+Athaliana_447_Araport11.cds_primaryTranscriptOnly.fa: cds file for kallisto
+dge_test_control_labels.tsv: labels for test and control RNA seq samples
+my_features_GO_prediction_edited.tsv: RNA seq samples metadata
+

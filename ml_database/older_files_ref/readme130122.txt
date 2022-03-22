@@ -1,0 +1,14 @@
+Notes
+All these files are older versions of web database scripts, orig_overallData folder consists of the
+very first overallData.json file used in web database, before any changes
+
+my commits, but somehow they have not been added to the github repo
+https://github.com/Sweekwang/golabel/commit/e6cff69263afd54d9bbbb022e6eab8496ebc7bb6
+
+Revert "created working edge weight filter"
+https://github.com/Sweekwang/golabel/commit/5e2e16821a07c59141a72de858e12f590c165a94
+
+Did these two 290122:
+- Revert working edge weight filter (one commit)
+- Revert building global feature table (one commit)
+--> deleted these commits by git hard reset and force push

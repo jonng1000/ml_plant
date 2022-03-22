@@ -1,0 +1,25 @@
+Two methods used to select GM and SM genes
+1) M1_Aracyc -> GM and SM genes from aracyc, only those with expt evidence
+2) M2_GO -> GM and SM genes from TAIR (uses GO terms), only those with expt evidence
+
+O1O6_method_uneeded: another way to get genes with the above characteristics from aracyc, but doesnt
+work, so ignore it.
+
+Aracyc_GM_only.csv
+Aracyc_SM_only.csv
+GO_GM_only.csv
+GO_SM_only.csv
+-> These files are genes from the above two methods, they are their output files
+
+aracyc_GO_SMGM_explore.py -> script taking in the above 4 files and viewing their contents
+
+d1s1_short.txt -> sheet one from supp data 1 from PNAS gene prediction paper
+
+050819
+only_GM_targetsv2.csv
+only_SM_targetsv2.csv
+-> these are the list of targets created by creating_targets.py. .csv files are labelled as v2
+since I have an outdated target file, Ara_GO_targets.csv
+-> these files are the genes labelled as GM and SM by both Aracyc and GO methods above (291019)
+
+

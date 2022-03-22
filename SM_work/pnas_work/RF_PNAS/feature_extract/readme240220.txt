@@ -1,0 +1,23 @@
+Scripts
+rf_feature_extract.py -> creates RF model and scores it, and calculates importance of each feature.
+Produces feat_impt_orig.txt and feat_impt.txt, depending on whether random features are introduced
+rf_feature_extract_beta.py -> early version of rf_feature_extract.py, can ignore
+explore_feat_i.py -> plots graph of feature importane
+test.py -> test script
+
+Files
+feat_impt_orig.txt -> importance of all features, no random features
+feat_impt.txt -> importance of all features, has random features
+test_rf_scores.txt -> test output
+
+Folders
+build_top_features -> contains scripts and output for building RF model in blocks of features.
+
+Output
+o_top10_boxplots.png -> boxplot of scores from top 10 features, no random features
+top10_boxplots.png -> boxplot of scores from top 10 features, with random features
+o_top50_boxplots.png -> boxplot of scores from top 50 features, no random features
+top50_boxplots.png -> boxplot of scores from top 50 features, with random features
+o_top100_boxplots.png -> boxplot of scores from top 100 features, no random features
+top100_boxplots.png -> boxplot of scores from top 1000 features, with random features
+                         

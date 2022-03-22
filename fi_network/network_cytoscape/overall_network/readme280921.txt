@@ -1,0 +1,76 @@
+Folders
+for_marek: cytoscape file created specially for marek, along with
+other files used for it (but i realised i also used the cytoscape file here for 
+some downstream work since its nodes naming scheme is improved)
+
+Files
+circular.graphml_1.pdf: circular network, to help in designing network picture
+*.pdf files: files to help in creating publication pics, can guess what file is based on its
+name
+circular_overall.ai: circular network, picture design 
+circular_overall_2.ai: updated version of above, for publication - IMPT FOR PAPER
+coloured_overall.ai: overall network, picture design
+coloured_overall2.ai: overall network, picture design, updated version of coloured_overall.ai
+- IMPT FOR PAPER
+overall_top10.ai: top 10 nodes by betweeness centrality and degree, and associated nodes,
+picture design 
+overall_top10_v2.ai: updated version for the above, for publication - IMPT FOR PAPER
+top10_edges.ai: top 10 edges, picture design - IMPT FOR PAPER
+Betweenness_top10.svg: top 10 nodes by betweeness centrality - IMPT FOR PAPER
+Betweenness_top10_cut.svg: top 10 nodes by betweeness centrality, with
+selected first neighbours - IMPT FOR PAPER
+circular.graphml_1.svg: circular network, to help in designing network picture
+- IMPT FOR PAPER
+circular_aranet.graphml.svg, circular_coexp.graphml.svg, circular_twas.graphml.svg:
+arannet, coexp, twas subnetworks, to help in designing network picture
+- IMPT FOR PAPER
+coloured_overall.svg: overall network, picture design
+coloured_overall2.svg: overall network, picture design, updated version of coloured_overall.svg
+- IMPT FOR PAPER
+Degree_top10.svg: top 10 nodes by degree - IMPT FOR PAPER
+Degree_top10_cut.svg: top 10 nodes by degree, with
+selected first neighbours - IMPT FOR PAPER
+top10_edges.svg: top 10 edges, to help in designing network picture - IMPT FOR PAPER
+overall_specific.cys: seems similar to overall_top10_nodes.cys but prob outdated, so can ignore
+overall_top10_nodes.cys: looking at top 10 nodes by degree and betweeness centralirt , 
+to help in designing network picture - IMPT FOR PAPER
+overall_view.cys: looking at overall network, to help in designing network picture 
+- IMPT FOR PAPER
+top10_edges_only.cys: top 10 edges, to help in designing network picture 
+- IMPT FOR PAPER
+top10_edges_subnetwork.cys: top 10 edges with connections to network
+fi_w_info.graphml: feature importance network file
+circular_overall.jpg: circular picture from circular_overall.ai
+circular_overall_2.png: updated version of above, for publication - IMPT FOR PAPER
+coloured_overall2.jpg: overall network picture from coloured_overall2.ai - IMPT FOR PAPER
+overall_top10.jpg: top 10 nodes and related info picture from overall_top10.ai - IMPT FOR PAPER
+overall_top10_v2.png: updated version of the above, for publication - IMPT FOR PAPER
+top10_edges.jpg: top 10 edges picture from top10_edges.ai - IMPT FOR PAPER
+all_edges_ranks.csv: edges with weights (invert_ranks)
+all_nodes_deg_betcen.csv: nodes with degree and betweeness centrality values
+all_nodes_deg_betcen.xlsx: Excel version of the above, for publication - IMPT FOR PAPER
+*.csv files: various metadata files used to help me annotate cytoscape graphs, title and 
+contents for each file would probably help me to know what file is used for what
+overall_edges.csv: all edges from the overall network
+coloured_orderedl_node_topology.csv: node info for analysing network topology
+betweeness_hist.png; betweeness centrality distribution for nodes
+betweeness_top10.PNG, degree_top10.PNG: shows ranks of top 10 nodes
+clustering_coef_hist.png: clustering coefficient distribution for nodes
+deg_dis_line.png: degree distribution with best fit line for nodes
+network_stats.PNG: to select certain network stats to put into paper
+scatter_GO0000502.png: shows relation between axis of image, not important
+DGE_category_specific_expt.txt: specific DGE names
+feat_cat_info_nofilter.txt: feature category info file
+GO_info_network.txt: GO description file
+messed_up.txt: shows DGE experiments with messed up names, but have been fixed in the file
+here with DGE experimental names
+
+Scripts
+feat_cat_info_nofilter.py: create feature category info file
+specific_explorations.py: basic exploration of 2 features related to GO term GO:0000502
+convert_fi_cytoscape.py: creates feature importance network with additional node attributes, 
+in .graphml format
+plot_network_toplogy.py: plot certain network topology metrics
+
+
+

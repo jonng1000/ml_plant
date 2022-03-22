@@ -1,0 +1,21 @@
+Files
+*.pdf, *.ai: .pdf and .ai files to make publication pics, can tell what the files are 
+by file name and content
+*.png, *.jpg: publication pics, some files are not needed, but can tell what files are needed, and
+their identity, by file name and content
+go.obo: GO database file
+ATH_GO_GOSLIM.txt: TAIR GO file
+GO_gene_counts.txt: Counts of GO class sizes and associated info
+sort_GO_gene_counts.txt: sorted version of GO_gene_counts.txt, with only selected info retained
+GO_info_network.txt: GO info for naming feature network nodes
+marek_selections.txt: 16 GO classes chosen by Marek for ML model and time trial
+
+Scripts
+See notes section
+
+Notes
+These scripts filters for genes with experimental evidence, and groups them into GO
+classs. Hence all downstream work using these files, including genes selected by Marek,
+will only use genes with experimental evidence.
+
+Read scripts to find out more on what all these files mean

@@ -1,0 +1,15 @@
+Scripts: 
+fully_proc_suba.py -> Creates fully processed file for ml workflow.
+Adds in suba predictions and random features. Produces fully_processed_suba.txt.
+GO_check_v2.py -> basic sanity check
+rf_feature_extract_v2.py -> generates scores and feature importances for
+*_GO.txt files
+Suba4-2020-3-9_15-43.csv -> file downloaded from suba website which has
+suba predictions for genes
+
+Folders (test1, test2):
+input and output files are shifted into these files.
+test1_wrong -> first test of suba predictions, slightly wrong because it has
+AraCyc annotation as three separate features (GM, SM, GM and SM).
+test2 -> remove above error, still see that ML workflow cannot accurately
+identify suba predictions as important features tho

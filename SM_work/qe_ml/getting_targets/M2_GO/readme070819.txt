@@ -1,0 +1,6 @@
+GO0019748 -> secondary metabolic process
+GO0044238 -> primary metabolic process
+
+Note that in the .csv files, these two terms are located in front of all the GO terms even though
+my script would have added them at the end, coz I added these terms manually, before modifying the
+script to do this.

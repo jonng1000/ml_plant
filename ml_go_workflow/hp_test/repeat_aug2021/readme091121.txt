@@ -1,0 +1,18 @@
+Folders
+output71_chp: output from my ml workflow, 71 GO classes, selected hps which have
+been optimised
+output71_dhp: output from my ml workflow, 71 GO classes, default hp
+output71_g1hp: output from my ml workflow, 71 GO classes, most freq hp group selected - 
+group 1
+output71_g2hp: output from my ml workflow, 71 GO classes, most freq hp group selected - 
+group 2
+output71_rshp: output from my ml workflow, 71 GO classes, hp optimised via random search,
+for each GO class
+
+Files
+*.svg: pictures of scores, if file name has boxplot: boxplot of scores, for publication,
+if file name has lineplot: lineplot of scores, not impt
+GO_term_desc.txt: file showing what each GO class target mean
+
+Scripts
+plot_lineplot_compare_all_v2.py: plot scores, lineplot and boxplot

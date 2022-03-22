@@ -1,0 +1,5 @@
+Files
+agi*: pickled models downloaded from web database, for checking
+
+Scripts
+opening_pickled.py: checking downloaded pickled models from web database

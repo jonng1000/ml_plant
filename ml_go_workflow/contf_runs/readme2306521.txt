@@ -1,0 +1,42 @@
+Folders
+output: results from ml workflow, contains feature importance,
+scores and pickled models
+output.zip: zipped output
+
+Files
+combined_boxplot.png, combined_hist.png: visualises score distributions of features,
+histogram has log10 y axis
+combined_hist_nolog.png: histogram score distribution of features, y axis is not log10
+class_labels_contf.txt: list of continuous features as targets for ml workflow
+high_contf_features.txt: high scoring continuous features, R sq >= 0.7, for building
+network
+score04_contf_features.txt: same as high_contf_features.txt but with a  R sq >= 0.4 threshold
+high_labels.txt: high scoring job ids, R sq >= 0.7, for building
+network
+labels_0_4.txt: same as high_labels.txt but with a  R sq >= 0.4 threshold
+log290621_9.txt: log file from ml workflow
+ml_dataset_mod.txt: modified ml dataset, replaced spaces with _
+-> don't actually need this anymore, as my corrected workflow removes the need for this
+mod_class_labels_contf.txt: maps job id number to target for ml workflow
+
+Scripts
+create_contf_targets.py: creates list of continuous features as targets to use in my ml
+workflow
+convert_labels.py: convert high scoring job ids, R sq >= 0.7, to their corresponding
+continuous features names
+explore_scores_rsq.py: explore scores from ml workflow, for continuous features
+mod_data_contf.py: modifies ml dataset, replacing spaces with _, to make it compatible with my
+workflow -> don't actually need this anymore, as my corrected workflow removes the need for this
+modify_contf_targets.py: modifies list of continuous features as targets, adds in job id, to use
+in my ml workflow
+parse_log_file.py: checks log files for unexpected error messages pertaining to problems
+parsing certain features
+visualise_boxplot_scores_contf.py, visualise_hist_scores_contf.py: 
+visualises distributions of oob R^2 scores of continuous features,
+those which scored well and those which did not. These scripts produce different types of plots.
+Histogram script has log10 y axis. 
+
+Notes:
+Plots of scores may not be accurate as 54 tti_ prefixed features have been mislabeled as continuous 
+when they should have been categorical, hence this would have changed the frequency of scores, and
+affect the plots. However, these plots would not be used as they are too general so nevermind.

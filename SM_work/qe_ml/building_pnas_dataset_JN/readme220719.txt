@@ -1,0 +1,12 @@
+d2s4 - d2s13.txt: gene features taken from supp data 2 of paper
+combined_data.txt: combined info from above .txt files, made by building_dataset.py
+combined_data_II.txt: combined from combined_data.txt and  d1s1.txt files, 
+made by expanding_dataset.py
+d1s1.txt: list of genes with targets (GM/SN/both)
+check_ds2s13.py and exploring_final_data.py: scripts to check and explore dataset when
+everything is combined
+small_com_data_II.xlsx: slightly reduced number of features from combined_data_II.txt
+features_small.xlsx: partial list of features used in small_com_data_II.xlsx
+
+Actually, don't need the features' values from the above, as I will be generating my own data,
+the above is just a guide for me only.

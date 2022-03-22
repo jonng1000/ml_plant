@@ -1,0 +1,14 @@
+Scripts:
+*.py: scripts to analyse and produce network features, read script to find out
+details
+- workflow is: HRR.py (about 30 min) -> reformat_pcc_output.py -> pcc.py
+explore_features.py: explore finished features
+
+Files:
+Other files: raw data, and intermediate files used for the generation of the coexp
+features file, coe_centrality_features.txt
+coe_centrality_features.txt: features file, used for ml
+ath_coe_clusters.txt: features file, used for ml
+
+Notes
+pcc.py saves output in the source file path, so need to shift it to this directory

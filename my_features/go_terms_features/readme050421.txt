@@ -1,0 +1,5 @@
+Scripts
+go_labels.py: creates GO terms features, 1HE
+
+File
+go_dataset.txt: GO terms feature file

@@ -1,0 +1,26 @@
+Folders
+
+Files
+*.png: pics of time taken
+- if file contains 'all_time': combined GO classes
+- if file contains 'go_class': separated GO classes
+- not sure what 'je' means in filename, but seems to only have rf and ada time
+- if file ends with '_pub.png': contains error bars, for publication
+*_scores.txt: output files from ml workflow done on chuck norris
+GO_0005829_300521.txt, GO_0016020_300521.txt: seems to contain the same type of info as
+*_scores.txt but more complete
+just_exploring.txt: output from just_exploring.py
+log200521.txt: log file from ml workflow
+selected.txt: from all the scores file, only selected the time taken info
+summary_log200521.txt: manually created file from log file, to help me more easily calculate
+time taken for my ml workflow
+
+Scripts
+just_exploring.py: just some exploration and plotting
+time_repeat_analysis_pub.py: analyse results from ml workflow, plots results, but modifed to have error bars,
+for publication
+
+Notes
+This readme was created Aug 21, not in May 21 when all these files were originally created, so I
+can't remember everything in this folder, but these info is not the most updated info for my
+paper, so I can ignore it

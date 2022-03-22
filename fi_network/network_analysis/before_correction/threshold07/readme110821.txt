@@ -1,0 +1,19 @@
+Files
+high*: selected features for workflow 
+fi_mr_hist.png, fi_mr_hist_50bins.png; histogram of mutual ranks, 16 and
+50 bins respectively
+impt_features_ranks.txt: ranks of features
+mutual_ranks.txt: mutual ranks of features
+selected_ranks.txt: selected ranks of feature importance
+
+Scripts
+create_mutual_ranks.py: creates mutual ranks from selected features
+explore_mranks.py: explores mutual ranks (MR) and draws histogram showing its distribution
+select_fi_ranks.py: selects only important features and assign them ranks
+
+Notes
+- This is when I ran these scripts here wrongly, but have corrected it, and this is my record
+of my mistake
+# This is when I used a threshold of 0.7 to select features, but assigned ranks before selecting
+# features
+# 625 nodes -> (625 * 624)/2 = 195 000 edges in a fully connected graph

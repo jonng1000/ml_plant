@@ -1,0 +1,522 @@
+tried running slf1_amp.py with a very wide range of parameters, but workstation
+seemed to stop responding at the 5th iteration, even tho cpu is running, not sure
+why. Maybe too many hyperparameters are being tested.
+
+Also, need to run my linux command with:
+python slf1_mp.py 2> /dev/null
+to discard stderr output, otherwise my log_file/screen will be flooded with warnings.
+
+Tried using warnings.filterwarnings('ignore'), but this works for Spyder but not linux shell.
+Shebang to run python with the option to turn warnings off also doesn't work for linux shell
+
+Tried running script again at around 9.30pm and it works, not sure why. Took ~3h to run on workstation.
+Wide range of hyperparameters seems worse compared to a more limited range tested in 
+loops_f1_041119. Not sure why? Saw something online saying gridsearch can bias model selection
+so need to have a test set, so maybe gridsearch is not perfect
+
+Full printout of script below:
+Script started: 04/11/2019 21:26:34
+
+Started iteration 1 04/11/2019 21:26:34
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:26:34
+Fitting model
+
+Started iteration 2 04/11/2019 21:28:11
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:28:11
+Fitting model
+
+Started iteration 3 04/11/2019 21:29:52
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:29:52
+Fitting model
+
+Started iteration 4 04/11/2019 21:31:17
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:31:17
+Fitting model
+
+Started iteration 5 04/11/2019 21:33:04
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:33:04
+Fitting model
+
+Started iteration 6 04/11/2019 21:34:49
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:34:49
+Fitting model
+
+Started iteration 7 04/11/2019 21:36:29
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:36:29
+Fitting model
+
+Started iteration 8 04/11/2019 21:38:12
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:38:12
+Fitting model
+
+Started iteration 9 04/11/2019 21:39:51
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:39:51
+Fitting model
+
+Started iteration 10 04/11/2019 21:41:38
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:41:38
+Fitting model
+
+Started iteration 11 04/11/2019 21:43:37
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:43:37
+Fitting model
+
+Started iteration 12 04/11/2019 21:45:22
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:45:22
+Fitting model
+
+Started iteration 13 04/11/2019 21:47:06
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:47:06
+Fitting model
+
+Started iteration 14 04/11/2019 21:48:48
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:48:48
+Fitting model
+
+Started iteration 15 04/11/2019 21:50:45
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:50:45
+Fitting model
+
+Started iteration 16 04/11/2019 21:52:32
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:52:32
+Fitting model
+
+Started iteration 17 04/11/2019 21:54:08
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:54:08
+Fitting model
+
+Started iteration 18 04/11/2019 21:55:50
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:55:50
+Fitting model
+
+Started iteration 19 04/11/2019 21:57:50
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:57:50
+Fitting model
+
+Started iteration 20 04/11/2019 21:59:44
+Finished oversampling and scaling
+Starting grid search 04/11/2019 21:59:44
+Fitting model
+
+Started iteration 21 04/11/2019 22:01:11
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:01:11
+Fitting model
+
+Started iteration 22 04/11/2019 22:03:02
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:03:02
+Fitting model
+
+Started iteration 23 04/11/2019 22:04:41
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:04:41
+Fitting model
+
+Started iteration 24 04/11/2019 22:06:24
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:06:24
+Fitting model
+
+Started iteration 25 04/11/2019 22:08:11
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:08:11
+Fitting model
+
+Started iteration 26 04/11/2019 22:09:42
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:09:42
+Fitting model
+
+Started iteration 27 04/11/2019 22:11:31
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:11:31
+Fitting model
+
+Started iteration 28 04/11/2019 22:13:23
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:13:23
+Fitting model
+
+Started iteration 29 04/11/2019 22:14:57
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:14:57
+Fitting model
+
+Started iteration 30 04/11/2019 22:16:29
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:16:29
+Fitting model
+
+Started iteration 31 04/11/2019 22:18:02
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:18:02
+Fitting model
+
+Started iteration 32 04/11/2019 22:19:51
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:19:51
+Fitting model
+
+Started iteration 33 04/11/2019 22:21:35
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:21:35
+Fitting model
+
+Started iteration 34 04/11/2019 22:23:18
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:23:18
+Fitting model
+
+Started iteration 35 04/11/2019 22:24:57
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:24:57
+Fitting model
+
+Started iteration 36 04/11/2019 22:26:35
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:26:35
+Fitting model
+
+Started iteration 37 04/11/2019 22:28:17
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:28:17
+Fitting model
+
+Started iteration 38 04/11/2019 22:29:59
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:29:59
+Fitting model
+
+Started iteration 39 04/11/2019 22:31:48
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:31:48
+Fitting model
+
+Started iteration 40 04/11/2019 22:33:39
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:33:39
+Fitting model
+
+Started iteration 41 04/11/2019 22:35:35
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:35:35
+Fitting model
+
+Started iteration 42 04/11/2019 22:37:07
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:37:07
+Fitting model
+
+Started iteration 43 04/11/2019 22:38:43
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:38:43
+Fitting model
+
+Started iteration 44 04/11/2019 22:40:18
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:40:18
+Fitting model
+
+Started iteration 45 04/11/2019 22:42:06
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:42:06
+Fitting model
+
+Started iteration 46 04/11/2019 22:43:57
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:43:57
+Fitting model
+
+Started iteration 47 04/11/2019 22:45:29
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:45:29
+Fitting model
+
+Started iteration 48 04/11/2019 22:47:15
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:47:15
+Fitting model
+
+Started iteration 49 04/11/2019 22:49:03
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:49:03
+Fitting model
+
+Started iteration 50 04/11/2019 22:50:40
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:50:41
+Fitting model
+
+Started iteration 51 04/11/2019 22:52:23
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:52:23
+Fitting model
+
+Started iteration 52 04/11/2019 22:54:08
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:54:08
+Fitting model
+
+Started iteration 53 04/11/2019 22:55:40
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:55:40
+Fitting model
+
+Started iteration 54 04/11/2019 22:57:21
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:57:21
+Fitting model
+
+Started iteration 55 04/11/2019 22:58:49
+Finished oversampling and scaling
+Starting grid search 04/11/2019 22:58:49
+Fitting model
+
+Started iteration 56 04/11/2019 23:00:23
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:00:23
+Fitting model
+
+Started iteration 57 04/11/2019 23:02:24
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:02:24
+Fitting model
+
+Started iteration 58 04/11/2019 23:04:06
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:04:06
+Fitting model
+
+Started iteration 59 04/11/2019 23:05:47
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:05:47
+Fitting model
+
+Started iteration 60 04/11/2019 23:07:23
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:07:23
+Fitting model
+
+Started iteration 61 04/11/2019 23:09:05
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:09:05
+Fitting model
+
+Started iteration 62 04/11/2019 23:11:02
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:11:02
+Fitting model
+
+Started iteration 63 04/11/2019 23:12:33
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:12:33
+Fitting model
+
+Started iteration 64 04/11/2019 23:14:00
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:14:00
+Fitting model
+
+Started iteration 65 04/11/2019 23:15:32
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:15:32
+Fitting model
+
+Started iteration 66 04/11/2019 23:17:01
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:17:01
+Fitting model
+
+Started iteration 67 04/11/2019 23:18:50
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:18:50
+Fitting model
+
+Started iteration 68 04/11/2019 23:20:10
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:20:10
+Fitting model
+
+Started iteration 69 04/11/2019 23:21:45
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:21:45
+Fitting model
+
+Started iteration 70 04/11/2019 23:23:26
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:23:26
+Fitting model
+
+Started iteration 71 04/11/2019 23:25:05
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:25:05
+Fitting model
+
+Started iteration 72 04/11/2019 23:26:47
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:26:47
+Fitting model
+
+Started iteration 73 04/11/2019 23:28:32
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:28:32
+Fitting model
+
+Started iteration 74 04/11/2019 23:30:17
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:30:17
+Fitting model
+
+Started iteration 75 04/11/2019 23:32:10
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:32:10
+Fitting model
+
+Started iteration 76 04/11/2019 23:34:07
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:34:07
+Fitting model
+
+Started iteration 77 04/11/2019 23:35:45
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:35:45
+Fitting model
+
+Started iteration 78 04/11/2019 23:37:33
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:37:33
+Fitting model
+
+Started iteration 79 04/11/2019 23:39:11
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:39:11
+Fitting model
+
+Started iteration 80 04/11/2019 23:40:46
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:40:46
+Fitting model
+
+Started iteration 81 04/11/2019 23:42:26
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:42:26
+Fitting model
+
+Started iteration 82 04/11/2019 23:44:08
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:44:08
+Fitting model
+
+Started iteration 83 04/11/2019 23:45:43
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:45:43
+Fitting model
+
+Started iteration 84 04/11/2019 23:47:22
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:47:22
+Fitting model
+
+Started iteration 85 04/11/2019 23:49:17
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:49:17
+Fitting model
+
+Started iteration 86 04/11/2019 23:51:00
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:51:00
+Fitting model
+
+Started iteration 87 04/11/2019 23:52:38
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:52:38
+Fitting model
+
+Started iteration 88 04/11/2019 23:54:33
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:54:33
+Fitting model
+
+Started iteration 89 04/11/2019 23:56:18
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:56:18
+Fitting model
+
+Started iteration 90 04/11/2019 23:58:11
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:58:11
+Fitting model
+
+Started iteration 91 04/11/2019 23:59:43
+Finished oversampling and scaling
+Starting grid search 04/11/2019 23:59:43
+Fitting model
+
+Started iteration 92 05/11/2019 00:01:27
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:01:27
+Fitting model
+
+Started iteration 93 05/11/2019 00:03:02
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:03:02
+Fitting model
+
+Started iteration 94 05/11/2019 00:04:48
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:04:48
+Fitting model
+
+Started iteration 95 05/11/2019 00:06:32
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:06:32
+Fitting model
+
+Started iteration 96 05/11/2019 00:08:11
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:08:11
+Fitting model
+
+Started iteration 97 05/11/2019 00:09:51
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:09:51
+Fitting model
+
+Started iteration 98 05/11/2019 00:11:33
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:11:33
+Fitting model
+
+Started iteration 99 05/11/2019 00:13:24
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:13:24
+Fitting model
+
+Started iteration 100 05/11/2019 00:15:00
+Finished oversampling and scaling
+Starting grid search 05/11/2019 00:15:00
+Fitting model
+
+Printing dataframes 05/11/2019 00:16:44
+Script finished 05/11/2019 00:16:44
+

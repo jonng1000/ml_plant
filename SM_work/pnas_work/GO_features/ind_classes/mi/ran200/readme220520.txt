@@ -1,0 +1,38 @@
+mutual information (mi)
+
+Files
+Golgi_mutinfo_feat.txt: mi of features, from mutual_info.py (originally it produces mi_golgi.txt but
+renamed it to this)
+Golgi_apparatus*_GO.txt: 5 dataset safter random feature selection
+Golgi_apparatus*_scores.txt: 5 model scores, from rf_feature_extract_v4_p.py
+Golgi_apparatus*_perm.txt: 5 model permutation importance, from rf_feature_extract_v4_p.py
+Golgi_apparatus*_feat.txt: 5 models feature importance, from rf_feature_extract_v4_p.py
+Golgi_apparatus*_build_s.txt: 5 model scores when it is built from features in batches. 
+They are in mi_build_s (used mi and build_RF_mi_f200rs.py) and perm_build_s
+(used permutation importance and build_RF_perm_f200.py) folders
+
+Golgi_apparatus*_feat.png: top features by permutation importance, plot from explore_perm_v2.py
+all_build_s.png: scores of models, plot from explore_build_s_v2.py
+They are in mi_build_s (used mi) and perm_build_s
+(used permutation importance) folders
+build_s1000.png: same as above, so redudant, as i have only 200 features here,
+plot from explore_build_s_v2.py
+all_feat_i.png: permutation importance, plot from explore_perm_all_v2.py                      
+all_scores.png: model scores, plot from explore_scores.py
+
+Scripts
+ran_feature_sel.py: Selects x features randomly y times from an original dataset, to produce a new
+dataset
+rf_feature_extract_v4_p.py and rfe_module_v3.py: builds models, scores it, and generatres permutation
+and feature importance
+build_RF_mi_f200rs.py: building model by features in batches and scoring it. Uses mi and from it, top
+200 features
+build_RF_perm_f200rs.py: building model by features in batches and scoring it. Uses
+permutation importance and from it, top 200 features
+
+explore_scores.py: shows boxplot of model scores over 15 runs
+explore_perm_v2.py: shows boxplot of top X number of features, according to permutation importance
+explore_build_s_v2.py: plots scores of models when it is built from features in batches
+explore_perm_all_v2.py: plots permutation importance of all features
+
+

@@ -1,0 +1,23 @@
+Folders
+output: results from ml workflow, 4 cores used, contains feature importance,
+scores and pickled models
+output.zip: zipped form of output
+
+Files
+class_labels_dge.txt: list of DGE features as targets for ml workflow
+combined_boxplot.png, combined_hist.png: distribution of DGE F1 scores
+high_dge_features.txt: high scoring DGE features, F1 >= 0.7, for building
+network
+score04_dge_features.txt: same as high_dge_features.txt but with F1 >= 0.4
+
+Scripts
+create_dge_targets.py: creates list of DGE features as targets to use in my ml
+workflow
+explore_scores.py: explore scores from ml workflow
+visualise_boxplot_scores_catf.py: visualises distributions of oob F1 scores of 
+categorical features (non GO terms) those which scored well and those which did not.
+visualise_hist_scores_catf.py: visualises distributions of oob F1 scores of
+categorical features (non GO terms), those which scored well and those which did not.
+
+Notes:
+

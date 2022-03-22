@@ -1,0 +1,25 @@
+data_creation: Contains files scripts used for data
+preprocessing
+- analyse_interpro.py: Takes in the interproscan output
+file, ath_aa_processed.fa.tsv, and does 1 hot encoding to
+convert protein domains into binary features. Output file
+is protein_doms.txt
+- process_ath_exp.py: preprocessing gene expression file. Takes
+in Ath.spm and produces edited_Ath.txt
+- combine_data.py: Combines edited gene expression features
+with protein domain features to create a dataset. Takes in
+edited_Ath.txt and protein_doms.txt. Output file is
+combined_data.txt
+- adding_labels.py: Takes in a dataset, combined_data.txt,
+and adds class labels to it. These are positive and negative
+labels. Genes which don't have either labels are removed.
+Produces Golgi_apparatus_GO.txt, which is stored in the
+parent folder of data_preprocessing
+- protein_doms.txt: output file from analyse_interpro.py
+- edited_Ath.txt: output file from process_ath_exp.py
+- Ath.spm: input file for process_ath_exp.py
+
+data_creation_v2: details in the folder itself
+
+Misc notes
+These info represents outdated features, so can ignore it

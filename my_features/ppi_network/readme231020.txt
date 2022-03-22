@@ -1,0 +1,44 @@
+Folders
+BIOGRID-ORGANISM-4.0.189.tab3: Biograd species specific ppi networks
+outdated: outdated ppi network info, can ignore
+
+Files
+ath_ppi.abc: Arabidopsis ppi network in .abc format for mcl, from
+convert_nx_abc.py
+ath_ppi.graphml: Arabidopsis ppi network in a graphml format, from
+convert_nx_abc.py
+dump.data.mci.I20: mcl gene clusters from Arabidopsis ppi network
+clusters_dist.png: Distribution of mcl gene clusters (ppi), log10
+scales, scatteplot, from plot_mcl.py
+clusters_dist_scatter.png: Distribution of mcl gene clusters (ppi),
+scatterplot (not very important)
+clusters_dist_hist.png: Distribution of mcl gene clusters (ppi),
+histogram (not very important)
+clusters_hist2.png: Distribution of mcl gene clusters (ppi), log10
+scales, histogram (not very important)
+deg_dist.png: Distribution of degress in Arabidopsis ppi, log10
+scales, scatterplot, from process_nx.py
+ath_centrality_features.txt: centrality measures of Arabidopsis ppi network,
+from centrality_nx.py
+ath_ppi.txt: cleaned Arabidopsis ppi network, from cleaning_network.py
+ath_ppi_clusters.txt: ppi network clusters (OHE) and cluster size,
+produced by process_mcl.py
+
+Scripts
+centrality_nx.py: Calculates centrality measures, takes ath_ppi.graphml
+as input and gives ath_centrality_features.txt as output
+cleaning_network.py: Cleans up Biogrid Arabidopsis ppi network, takes in
+BIOGRID-ORGANISM-Arabidopsis_thaliana_Columbia-4.0.189.tab3.txt and
+produces ath_ppi.txt
+convert_nx_abc.py: Explores Arabidopsis ppi and converts it into graphml
+and abc formats. Takes in ath_ppi.txt and produces ath_ppi.graphml and
+ath_ppi.abc
+process_mcl.py: Produces OHE ppi clusters,and calculates cluster size.
+Takes in dump.data.mci.I20 and outputs ath_ppi_clusters.txt
+process_nx.py: Plots degree distribution from Arabidopsis ppi, takes in
+ath_ppi.graphml and produces deg_dist.png
+plot_mcl.py: Plots mcl gene clusters from ppi, takes ath_ppi_clusters.txt and
+produces clusters_dist.png. Note: clusters_dist_scatter.png, clusters_dist_hist.png
+and clusters_hist2.png are produced from modifications to this script, but these pictures
+aren't very important
+explore_features.py: explore finished features

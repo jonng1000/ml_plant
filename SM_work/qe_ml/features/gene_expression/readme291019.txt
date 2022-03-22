@@ -1,0 +1,12 @@
+Plots here are produced by cleaning_gene_ex.py.
+
+Ath_matrix.txt is the raw gene expression file
+Ath_sampleAnnotation.txt is the file which names some columns of Ath_matrix.txt
+selected_sra.txt refers to those tissues which Marek and me have selected as our
+gene expression data for ML. Can refer to OneNote entry Gene taxa and expression 25/10/19
+
+Files ending with _description.txt are the output from cleaning_gene_ex.py, showing
+descriptive stats for my various measures of gene expression.
+
+processed_gene_ex.txt is the file which has the gene expression features, which
+is used for ML.

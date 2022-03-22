@@ -1,0 +1,25 @@
+Files
+dump.data.mci.I20: mcl clustering output
+barplot_explore.png: barplot showing number of enriched feature categories per cluster
+focused_barplot_explore.png: narrow view of above, shows specific clusters with >1
+enriched feature categories
+heatmap_sign.png: heatmap showing enriched feature categories per cluster
+overlap_heatmap.png: simplified heatmap from the above, to show co-occurence of enriched
+categories more clearly
+categories_orig_prop.txt: original proportion of feature categories in clusters
+feat_cat_info.txt: feature category info file
+pvalue_corrected.txt: corrected p-values
+pvalue_fcat.txt: raw p-values
+pvalue_fcat_test.txt: similar to pvalue_fcat.txt, for testing, can ignore
+
+Scripts
+calculate_orig_prop.py: calculate original proportion of feature categories in clusters
+create_feat_cat_info.py: create feature category info file
+fc_perm_test.py: permutation test to see if proportion of feature categories in clusters is 
+statistically significant
+focus_overlap.py: plots simplified heatmap
+plot_heatmap_sign.py: plots heatmap, statistically significant enriched/depleted feature 
+categories in clusters
+plot_overlap.py: plots simpler barplot
+pvalue_correction.py: applies pvalue correction after permutation test
+

@@ -1,0 +1,16 @@
+Folders
+output: 
+- Contains output files from ml workflow using the permutation test.
+- Has the below:
+ - output file(*_perm.txt: permutation importance for features,
+   *_feat.txt feature: importance for features, *_build_s.txt:
+   model scores when it is build from blocks of features, as
+   determined by permutation test, *_scores.txt: model scores,
+   explore_*_.py scripts: data visualisation of output files,
+    feat_everything and feat_selected folders and*.png files:
+    pictures from data visualisation scripts)
+perm_test_outdated: outdated results from permutation test,
+just ignore
+
+Files
+*_GO.txt: GO data sets for permutation test

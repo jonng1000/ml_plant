@@ -1,0 +1,49 @@
+Folders
+without_rz: contains work done when mutual rank (MR) calculation is done incorrectly,
+as feature importance values of 0 have not been removed
+
+Files
+fi.abc: feature importance network in abc format for mcl
+fi.graphml: feature importance network in graphml for networkx
+dump.data.mci.I20: mcl clustering output, used to create cluster of features
+histogram of MR, has 16 bins, has feature importance values of 0
+fi_mr_hist.png: histogram of MR, has 16 bins, has feature importance values of 0
+impt_fi_hist.png: histogram of feature importance of features (has feature
+importance values of 0, but this is important)
+nonzero_mr.png: mutual ranks of feature importance values, those with
+0 have been removed
+hist_cs.png: histogram of distribution of cluster size
+big_fi.txt: contains all feature importance values for all features
+(has feature importance values of 0, but this is important)
+fi_centrality_values.txt: network centrality values for feature importance
+fi_clusters.txt: feature importance clusters
+impt_features_i.txt: feature importance values
+score04*: selected features for workflow, needed to remove feature
+importance values of 0 downstream
+nonzero_mr.txt: MR of feature importance values, those with
+0 have been removed
+selected_mr.txt: feature importances selected based on MR threshold
+
+Scripts
+cal_mr_nonzero.py: creates mutual ranks from all features, 
+ignore feature importance values that are zero
+centrality_nx.py: calculates degree and inbetweeness centrality measures from a graph, and 
+saves it to a file
+convert_nx_abc_fi.py: graph creation, used after feature importance values of 0 have
+been removed and ranks have been processed
+create_big_fi_file.py: create big feature importance file, in a matrix, impt for
+downstream work
+explore_fic.py: plots histogram of feature importance cluster sizes
+explore_mr.py: plots histogram of mutual ranks of feature importance values
+process_mcl_fi.py: process mcl clusters for feature importance
+select_fi.py: selects only important features
+plot_cluster_size.py: from mcl clustering output calculates cluster size and 
+plots histogram of cluster size
+
+Notes
+- some of the work here were done by including feature importance values of 0, but these are
+important hence are included here. Work done by including such values, if they aren't important,
+are shifted to the without_rz folder, which represents oudated work
+
+- some of the work here would have been done by scripts in CN
+select_mr.py: selects features based on mutual rank (MR) threshold

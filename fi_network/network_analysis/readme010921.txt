@@ -1,0 +1,37 @@
+Folders
+before_correction: work before correcting for 54 tti_cluster features
+
+Files
+fi.abc: fi network in .abc format for mcl
+fi.graphml: fi network in .graphml format for downstream work
+dump.data.mci.I20: mcl clustering output from fi network
+hist_cs.png: histogram of feature importance cluster sizes
+nonzero_mr.png: histogram of mutual ranks (MR), excluding features with 0 feature importance
+values
+nonzero_mr.pdf: .pdf version of the above .png pic
+big_fi.txt: complete feature importance file, before any filtering
+features_pass_thresh.txt: table showing the top 10 features in terms of feature importance, 
+for each target feature
+impt_features_i.txt: features which pass the F1/R sq threshold of >= 0.4
+nonzero_mr.txt: MR of feature pairs, excluding features with 0 feature importance
+values
+score04edit_contf_features.txt, score04_dge_features.txt, score04_GO_features.txt,
+score04_rest_catf_features.txt, score04_tti_features.txt: list of features which pass 
+the F1/R sq threshold of >= 0.4
+score04_contf_features.txt: outdated list of features, as it included the tti features which
+should not be there
+selected_mr.txt: selected features which pass the MR threshold for network construction
+
+Scripts
+cal_mr_nonzero.py: creates mutual ranks from all features, ignore feature 
+importance values that are zero
+check_orig_contf.py: check continuous features for wrongly labelled ttr_cluster_id features
+convert_nx_abc_fi.py: convert network into formats for mcl and downstream work
+create_big_fi_file_v2.py: creating big feature importance file, modified to
+correct for 54 tti_cluster features
+explore_mr.py: plots MR histogram
+explore_scores_tti.py: gets high scoring tti features
+get_feat_thresh.py: gets top 10 features, for each feature as class target
+plot_cluster_size.py: plots histogram of feature importance cluster size
+select_fi_v2.py: selects only important features
+select_mr.py: selects feature pairs based on MR threshold

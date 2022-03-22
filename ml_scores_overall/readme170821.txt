@@ -1,0 +1,28 @@
+Folders
+ind_hist: individual histograms and other info, from plotting each feature categories
+test_pics: test pictures and other info when deciding what exact pic to use for paper, 
+these are not needed
+
+Files
+heatmap_catf.png: heatmap for categorical features
+- *.svg: svg verison, for publication
+heatmap_contf.png: heatmap for continuous features
+- *.svg: svg verison, for publication
+dge_scores: DGE scores
+dge_scores_groups.txt: DGE scores with their groups
+edited_catf_scores.txt: categorical features ml scores
+edited_contf_scores.txt: continuous features ml scores
+go_scores.txt: GO terms scores
+go_scores_domains.txt: GO terms scores with their top level domains
+
+Scripts
+add_DGE_grps.py: add DGE groups to DGE scores 
+add_parent_domain.py: add GO top level domain names to GO scores
+get_cat_f_scores.py, get_cont_f_scores.py: get categorical and continuous features scores
+respectively, for downstream plotting
+get_other_scores.py: get GO/DGE scores
+heatmap_catf_v4.py: plot heatmap of categorical features, normalised counts by converting it to
+proportions
+heatmap_contf_v2.py: plot heatmap of continuous features, normalised counts by converting it to
+proportions
+

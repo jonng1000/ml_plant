@@ -1,0 +1,21 @@
+Files
+clustermap_sig.png: clustermap of permutation test
+heatmap_sig.png: heatmap of permutation test, ordered axes
+test_heatmap_sig.png: similar to heatmap_sig.png, default axes ordering
+test*.png: other test heatmaps
+edges_catgories.txt: counts of edges across feature categories
+feature_category_info.txt: maps feature to feature category
+pvalue_corrected.txt: corrected p-values from permutation test
+pvalue_edges.txt: uncorrected p-values from permutation test
+clustermap_guidelines.ai: just to help me see clusters from clustermap pic
+
+Scripts
+calculate_edges.py: calculates number of edges between feature category pairs
+edges_perm_test.py: permutation test to see if number of edges across feature categories
+is statistically significant
+feature_category_info.py: create feature category info file
+plot_clustermap.py: plots clustermap, statistically significant enriched/depleted 
+number of edges across feature categories
+plot_heatmap.py: plots heatmap, statistically significant enriched/depleted 
+number of edges across feature categories
+pvalue_correction_edges.py: applies pvalue correction after permutation test

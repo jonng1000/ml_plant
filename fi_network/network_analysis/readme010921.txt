@@ -32,6 +32,8 @@ correct for 54 tti_cluster features
 explore_mr.py: plots MR histogram
 explore_scores_tti.py: gets high scoring tti features
 get_feat_thresh.py: gets top 10 features, for each feature as class target
+
+Notes
 plot_cluster_size.py: plots histogram of feature importance cluster size
 select_fi_v2.py: selects only important features
 select_mr.py: selects feature pairs based on MR threshold

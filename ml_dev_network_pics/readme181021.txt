@@ -10,3 +10,6 @@ nonzero_mr.pdf: MR distribution, pdf version to make publication pics
 contents by looking at its name and contents
 *.jpg, *.png: publication pics for paper, can guess file's contents by looking at its 
 name and contents
+
+Notes
+heatmap_v2.png: edited rhs histogram borders manually 

@@ -9,7 +9,7 @@ import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
 
-FILE = 'cores_time_taken.txt'
+FILE = '../cores_time_taken.txt'
 
 data = pd.read_csv(FILE, sep='\t', index_col=0)
 
@@ -21,5 +21,5 @@ data = data.reset_index()
 
 fig, ax = plt.subplots()
 sns.barplot(data=data, x='cores', y='time_taken_(m)')
-plt.savefig('cores_time.png')
+plt.savefig('cores_time.svg')
 plt.close()

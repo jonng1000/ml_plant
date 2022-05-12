@@ -1,5 +1,6 @@
 Folders
 database_pics: getting pics from web database, for paper
+- draft_pics: folder for draft pics, can ignore
 development_files: files for web dev work
 naming_files_mid2021: files used to create feature names, descriptions and categories, but these
 are outdated so can ignore

@@ -67,5 +67,12 @@ AT5G27247               18
 AT1G55207               18
 
 [27655 rows x 1 columns]
+
+# Set of all phylostrata, not always consecutive as this is obtained from
+# Irene's data, which has a bigger set of values
+renamed_ath_df['phy_phylostrata'].unique()
+Out[2]: 
+array([ 1,  3,  6,  4,  7, 10,  8, 13, 11, 17, 18, 15, 19, 21],
+      dtype=int64)
 '''
 renamed_ath_df.to_csv(OUTPUT, sep='\t')

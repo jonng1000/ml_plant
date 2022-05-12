@@ -5,9 +5,10 @@ these are not needed
 
 Files
 heatmap_catf.png: heatmap for categorical features
-- *.svg: svg verison, for publication
+- *.pdf: pdf verison, for publication
 heatmap_contf.png: heatmap for continuous features
-- *.svg: svg verison, for publication
+- *.pdf: pdf verison, for publication
+- _test.pdf: test version, for testing
 dge_scores: DGE scores
 dge_scores_groups.txt: DGE scores with their groups
 edited_catf_scores.txt: categorical features ml scores

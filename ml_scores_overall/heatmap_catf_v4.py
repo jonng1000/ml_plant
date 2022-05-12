@@ -96,7 +96,10 @@ temp = pd.concat(all_bins, axis=1)
 temp = temp.transpose()
 # Plotting
 plt.figure(figsize=(8,8))
-g = sns.heatmap(temp, cmap='Blues', cbar_kws={'label': 'Proportion'})
+g = sns.heatmap(temp, cmap=sns.color_palette("rocket", 10), 
+                cbar_kws={'label': 'Proportion', 
+                          'ticks':[i/10 for i in range(0,11)]}
+                )
 g.set(xlabel='oob_F1')
 '''
 # Default positions without changing xticks

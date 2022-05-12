@@ -1,5 +1,6 @@
 Files
 cores_time.png: shows time taken when number of cores are varied
+- .svg version is for publication
 oob_acc.png, oob_f1.png: shows scores
 scatterplot.png, scatterplot_line.png: shows the relationship between GO
 class size and model score, _line suffix means GO class size is log transformed

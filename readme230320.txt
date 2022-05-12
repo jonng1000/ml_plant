@@ -1,4 +1,6 @@
 Folders
+special_packages: packages used that arent installed in the typical anaconda setup
+- my rain cloud plots are in: special_packages\RainCloudPlots\tutorial_python\JN_figs
 fi_network: feature importance network to identify important features
 ml_database: ml database info
 ml_experimental_work: ml work involving computationally assigned GO terms, Marek didn't

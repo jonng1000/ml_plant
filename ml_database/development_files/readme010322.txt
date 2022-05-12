@@ -1,10 +1,13 @@
 Folders
 testing_dls: testing models downloaded from web database
 output_fi: latest fi files for web database
-output_fi.zip: zipped version of the above
 network: network files for web database
 
 Files
+output_fi.tar.gz: zipped version of the above
+output_models.tar.gz: tarball model files for web database
+output_readme.tar.gz: tarball readme files for web database
+output_scores.tar.gz: tarball scores files for web database
 spearman_values.txt: spearman values to show feature rank score (FRS) in web database
 single_letter_aa_lookup.txt: amino acid lookup table to help in creating good feature info
 for web dev
@@ -22,6 +25,7 @@ summariseData.json: global feature info table
 overallData.json: summary of global feature info table, for web database homepage
 
 Scripts
+copy_model_files.py, copy_score_files.py: copying files to create tarball for web database upload
 summarise_json.py: creates small table in json format for web database frontpage
 process_partial.py, process_stageII.py, process_stageIV.py: scripts to process feature info, to
 help in creating good feature info for web dev, this corresponds to

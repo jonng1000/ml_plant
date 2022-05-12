@@ -3,6 +3,8 @@
 Created on Sun Feb 27 19:49:38 2022
 
 @author: weixiong001
+
+Just to look at some nodes, can ignore this script
 """
 
 from goatools import obo_parser

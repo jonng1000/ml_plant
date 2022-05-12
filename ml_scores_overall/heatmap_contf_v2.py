@@ -37,10 +37,10 @@ selected = df.loc[:, 'oob_r_sq']
 
 pfa_bins = sel_bins(selected, 'pfa')
 cin_bins = sel_bins(selected, 'cin')
-ptm_bins = sel_bins(selected, 'cin')
+ptm_bins = sel_bins(selected, 'ptm')
 ttf_bins = sel_bins(selected, 'ttf')
 gwa_bins = sel_bins(selected, 'gwa')
-twa_bins = sel_bins(selected, 'gwa')
+twa_bins = sel_bins(selected, 'twa')
 cif_bins = sel_bins(selected, 'cif')
 # These feature categories have <10 features
 con_bins = sel_bins(selected, 'con')
@@ -65,8 +65,11 @@ temp = pd.concat([pfa_bins, cin_bins, ptm_bins, ttf_bins, gwa_bins,
                   pep_bins, num_bins, ppi_bins, coe_bins, ttr_bins, 
                   agn_bins, ntd_bins] , axis=1)
 temp = temp.transpose()
-plt.figure(figsize=(10,7))
-g = sns.heatmap(temp, cmap='Blues', cbar_kws={'label': 'Proportion'})
+plt.figure(figsize=(10,10))
+g = sns.heatmap(temp, cmap=sns.color_palette("rocket", 10),
+                cbar_kws={'label': 'Proportion', 
+                          'ticks':[i/10 for i in range(0,11)]}
+                )
 g.set(xlabel='oob_R_sq')
 '''
 # Default positions without changing xticks
@@ -88,6 +91,9 @@ g.set_yticklabels(['Pfam domains (2761)','cis-regulatory element names (82)',
                    'Number of domains (2)', 'PPI network features (3)',
                    'Coexp network features (3)', 'Regulatory network features (3)',
                    'Aranet network features (3)', 'Nucleotide Diversity (1)'])
+# Needed to rotate ticks, altho heatmap script for categorical features didn't
+# need this
+g.tick_params(axis='y', rotation=0)
 plt.tight_layout()
-g.figure.savefig(FIG)
+g.figure.savefig(FIG, transparent=True)
 plt.close()

@@ -12,7 +12,7 @@ from matplotlib import pyplot as plt
 import pandas as pd
 
 FILE = 'ARATH-matrix-HRR.txt'
-FIG = 'hrr_hist.png'
+FIG = 'hrr_hist.svg'
 RANK_TYPE = 'HRR'
 
 

@@ -27,6 +27,7 @@ together with the other results (scores, feature importance etc), and delete the
 Files
 feature_type.txt: List of feature types for ml work
 ml_dataset.txt: ML dataset with all features
+- ml_dataset.tar.gz: tarball version of ml data, for upload to github
 ml_dataset_dc.txt: Downcasted ml dataset for ml work
 test_dataset.txt: small test dataset to test my ml scripts, produced from test_dataset.py,
 has GO:0016020 and GO:0005829 GO classes for testing

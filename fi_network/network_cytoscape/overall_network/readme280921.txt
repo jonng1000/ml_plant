@@ -4,6 +4,7 @@ other files used for it (but i realised i also used the cytoscape file here for
 some downstream work since its nodes naming scheme is improved)
 
 Files
+heatmap_deg.pdf: heatmap showing feature degree distribution
 circular.graphml_1.pdf: circular network, to help in designing network picture
 *.pdf files: files to help in creating publication pics, can guess what file is based on its
 name
@@ -11,6 +12,7 @@ circular_overall.ai: circular network, picture design
 circular_overall_2.ai: updated version of above, for publication - IMPT FOR PAPER
 coloured_overall.ai: overall network, picture design
 coloured_overall2.ai: overall network, picture design, updated version of coloured_overall.ai
+coloured_overall3.ai: overall network, picture design, updated version of coloured_overall2.ai
 - IMPT FOR PAPER
 overall_top10.ai: top 10 nodes by betweeness centrality and degree, and associated nodes,
 picture design 
@@ -26,6 +28,7 @@ arannet, coexp, twas subnetworks, to help in designing network picture
 - IMPT FOR PAPER
 coloured_overall.svg: overall network, picture design
 coloured_overall2.svg: overall network, picture design, updated version of coloured_overall.svg
+coloured_overall3.svg: overall network, picture design, updated version of coloured_overall2.svg
 - IMPT FOR PAPER
 Degree_top10.svg: top 10 nodes by degree - IMPT FOR PAPER
 Degree_top10_cut.svg: top 10 nodes by degree, with
@@ -42,7 +45,8 @@ top10_edges_subnetwork.cys: top 10 edges with connections to network
 fi_w_info.graphml: feature importance network file
 circular_overall.jpg: circular picture from circular_overall.ai
 circular_overall_2.png: updated version of above, for publication - IMPT FOR PAPER
-coloured_overall2.jpg: overall network picture from coloured_overall2.ai - IMPT FOR PAPER
+coloured_overall2.jpg: overall network picture from coloured_overall2.ai
+coloured_overall3.jpg: overall network picture from coloured_overall3.ai - IMPT FOR PAPER
 overall_top10.jpg: top 10 nodes and related info picture from overall_top10.ai - IMPT FOR PAPER
 overall_top10_v2.png: updated version of the above, for publication - IMPT FOR PAPER
 top10_edges.jpg: top 10 edges picture from top10_edges.ai - IMPT FOR PAPER
@@ -71,6 +75,6 @@ specific_explorations.py: basic exploration of 2 features related to GO term GO:
 convert_fi_cytoscape.py: creates feature importance network with additional node attributes, 
 in .graphml format
 plot_network_toplogy.py: plot certain network topology metrics
-
+deg_dist_features.py: plots heatmap showing feature degree distribution
 
 

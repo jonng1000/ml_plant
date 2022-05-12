@@ -1,0 +1,7 @@
+Notes
+These files and folders are a copy of those in 
+G:\My Drive\machine_learning\special_packages\RainCloudPlots\tutorial_python
+Cannot upload these into github as they are in a nested repo, and github doesn't sync nested
+repos, hence put these files here.
+
+Ensure these files are updated (caa 120522 1500) whenever changes are made to the above

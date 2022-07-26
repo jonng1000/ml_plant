@@ -1,0 +1,24 @@
+Folders
+draft_2021: experimental GO work in 2021, but can ignore and only refer if needed
+interpro_GO_features: GO features from interproscan (from interpro features used for
+ml project)
+tair_gaf: contains TAIR GO database
+
+Files
+AT1G04250_GO_features.txt: AT1G04250 GO features, for troubleshooting
+atg_GO_features_test.txt: GO features, for troubleshooting
+atg_GO_features.txt: GO features, bigger file, but also for troubleshooting
+atg_GO_features_corrected.txt: GO features, corrected file
+go.obo: main GO database
+tair.gaf.gz: gzipped version of tair_gaf
+
+Script
+get_GO_counts.py: getting all GO terms from GO database, explore and clean data, and get
+GO features for ml
+explore_GO.py: create expt GO terms as targets for ml, but got error so decided
+not to continue this
+
+Notes:
+This is experimental work which is not part of my phd, exploring how using only GO features,
+including computational terms, is useful for ml GO prediction. But turns out their performance
+is still very poor

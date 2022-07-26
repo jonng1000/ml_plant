@@ -2,6 +2,8 @@ Folders
 before_correction: work before correcting for 54 tti_cluster features
 
 Files
+network_thresholds.ai: network thresholds for paper
+- *.pdf: pic for paper
 fi.abc: fi network in .abc format for mcl
 fi.graphml: fi network in .graphml format for downstream work
 dump.data.mci.I20: mcl clustering output from fi network
@@ -21,6 +23,7 @@ the F1/R sq threshold of >= 0.4
 score04_contf_features.txt: outdated list of features, as it included the tti features which
 should not be there
 selected_mr.txt: selected features which pass the MR threshold for network construction
+network_thresholds.txt: number of nodes and edges in the network with different thresholds
 
 Scripts
 cal_mr_nonzero.py: creates mutual ranks from all features, ignore feature 
@@ -32,6 +35,10 @@ correct for 54 tti_cluster features
 explore_mr.py: plots MR histogram
 explore_scores_tti.py: gets high scoring tti features
 get_feat_thresh.py: gets top 10 features, for each feature as class target
+plot_network_thresholds.py: plot pic to see number of nodes and edges in the network 
+with different thresholds
+network_thresholds.py: get number of nodes and edges in the network 
+with different thresholds
 
 Notes
 plot_cluster_size.py: plots histogram of feature importance cluster size

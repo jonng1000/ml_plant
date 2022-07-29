@@ -4,3 +4,5 @@ This file is for my github repo only, just to explain what this repo is. The oth
 Complete directory is stored in my lab's Google Drive, this repo only has the directory structure, .py and readme files.
 
 Contains a nested repo, raincloudplots, which is not synced with github as it does not allow for syncing of nested github repos
+
+The ml_plant_cn repo is the chuck norris (cn) workstation backup, but main phd info is here

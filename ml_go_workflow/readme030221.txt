@@ -28,6 +28,9 @@ Files
 feature_type.txt: List of feature types for ml work
 ml_dataset.txt: ML dataset with all features
 - ml_dataset.tar.gz: tarball version of ml data, for upload to github
+ml_dataset_na.txt: ML dataset with all features, missing values represented by NA,
+to make the journal's editor happy
+- ml_dataset_na.tar.gz: tarball version, for upload to github
 ml_dataset_dc.txt: Downcasted ml dataset for ml work
 test_dataset.txt: small test dataset to test my ml scripts, produced from test_dataset.py,
 has GO:0016020 and GO:0005829 GO classes for testing
@@ -40,6 +43,7 @@ downcast_ml_v2.py: Takes ml_dataset.txt and downcasts it so that simpler datatyp
 which would save memory. Outputs ml_dataset_dc.txt.
 test_dataset.py: creates a small test dataset to test my ml scripts, for GO terms
 - scripts with this name but with diff prefixes: for DGE, continuous, other categorical features
+ml_convert_na.py: insert NAs in the raw ml data to make the editor happy
 
 Note
 Discovered 170821: For all 54 tti prefixed features, they have been mislabeled as continuous 
